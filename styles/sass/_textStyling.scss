@@ -1,0 +1,33 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 125%;
+  font-weight: 400;
+  line-height: toRem(32);
+  letter-spacing: toRem(0);
+  color: $black;
+}
+
+
+h1 {
+  font-family: 'Lora', serif;
+  font-weight: 700;
+  font-size: toRem(80);
+  line-height: toRem(92);
+}
+
+h2, h3, h4 {
+  font-weight: 700;
+  font-size: toRem(42);
+  letter-spacing: toRem(1);
+}
+
+h3 { 
+  font-size: toRem(32);
+}
+
+h4 {
+  font-size: toRem(24);
+}
+
+
+

@@ -1,0 +1,25 @@
+// sass variables or functions (put up here if any are used in the partials)
+
+// googled convert px to rem and found this site where I got the function from https://dev.to/nikolab/convert-px-to-rem-using-sass-3-methods-4ep2
+
+@function toRem($value) {
+    $remValue: ($value / 16) + rem; 
+    @return $remValue;
+}
+
+// sass partials 
+@import "setup";
+@import "colors";
+@import "textStyling";
+
+
+// put sass variables here if they use anything from the partials
+
+
+
+// styles
+
+
+h1 {
+  color: $accent;
+}
