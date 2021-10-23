@@ -38,6 +38,7 @@ header {
   background-color: $orangeyYellow;
 }
 
+// home page
 header.home {
   h1 {
     position: relative;
@@ -61,6 +62,7 @@ header.home {
   }
 }
 
+//blog page
 header.blog {
   .background {
     background-image: url(../assets/blog-image-1.jpg);
@@ -68,16 +70,28 @@ header.blog {
     background-position: 100% 0;
     height: 40vh;
   }
-  .title {
 
-  }
   h1 {
     padding-top: 325px;
     margin: 0;
+    font-size: 3.5rem;
   }
-
 }
 
+//contact page
+header.contact {
+  .background {
+    background-image: url(../assets/contact-image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+  }
+  h1 {
+    padding-top: 330px;
+    margin: 0;
+    font-size: 3.5rem;
+  }
+}
 
 // nav styles
 nav {
