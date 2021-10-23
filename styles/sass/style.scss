@@ -18,6 +18,20 @@
 
 
 // styles
+// wrapper
+ .wrapper {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+// header styles
+header {
+  background-color: $orangeyYellow;
+}
+
+
 // nav styles
 nav {
   ul {
@@ -26,25 +40,21 @@ nav {
     justify-content: center;
     align-items: center;
     li {
+      text-transform: uppercase;
       padding: 20px;
       a {
         text-decoration: none;
-        text-transform: uppercase;
         color: $black;
       }
       a.white {
         color: $whiteShade;
       }
       p {
-        font-family: 'Lora', serif;
+        font-family: $loraFont;
         font-weight: 700;
         font-size: toRem(24);
-        text-transform: uppercase;
       }
     }
   }
 }
 
-h1 {
-  color: $accent;
-}

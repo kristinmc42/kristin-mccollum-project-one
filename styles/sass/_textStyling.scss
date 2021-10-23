@@ -1,5 +1,9 @@
+$robotoFont: 'Roboto', sans-serif;
+$loraFont: 'Lora', serif;
+
+
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: $robotoFont;
   font-size: 125%;
   font-weight: 400;
   line-height: toRem(32);
@@ -7,16 +11,18 @@ html {
   color: $black;
 }
 
+h1, h2, h3, h4 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
 
 h1 {
-  font-family: 'Lora', serif;
-  font-weight: 700;
+  font-family: $loraFont;
   font-size: toRem(80);
   line-height: toRem(92);
 }
 
 h2, h3, h4 {
-  font-weight: 700;
   font-size: toRem(42);
   letter-spacing: toRem(1);
 }
@@ -29,5 +35,7 @@ h4 {
   font-size: toRem(24);
 }
 
-
+p {
+  font-size: toRem(20px);
+}
 
