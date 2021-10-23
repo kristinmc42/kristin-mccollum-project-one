@@ -13,6 +13,7 @@
 @import "textStyling";
 @import "forms";
 @import "footer";
+@import "mediaQueries";
 
 
 // put sass variables here if they use anything from the partials
@@ -95,7 +96,7 @@ header.contact {
   }
   h1 {
     padding-top: 330px;
-    padding-left: 30px;
+    padding-left: 20px;
     margin: 0;
     font-size: 3.5rem;
   }
@@ -110,6 +111,7 @@ nav {
     justify-content: center;
     align-items: center;
     margin: 0;
+    padding: 0;
     li {
       text-transform: uppercase;
       line-height: toRem(29);
@@ -135,6 +137,13 @@ nav {
 }
 
 // main styles
+//home page
+
+//end of home page main styles
+//blog page
+
+
+// end of blog page main styles
 // contact page
 main.contact {
   background-color: $whiteShade;
@@ -180,5 +189,47 @@ main.contact {
      }
 
     }
+}
+//end of contact page main styles
 
+
+//media queries
+// home page
+
+
+//blog page
+
+
+//contact page
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+ 
+  .contact {
+    .wrapper {
+      width: 95%;
+    }
+  }
+}
+
+@media (max-width: 560px){
+  header.contact {
+    li {
+      padding: 20px 10px;
+    }
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  // HELP: why isn't this working???
+  header.contact {
+    h1 {
+      font-size: 2.2rem;
+    }  
+  }
 }
