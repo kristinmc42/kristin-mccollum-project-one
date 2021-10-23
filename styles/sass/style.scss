@@ -227,9 +227,12 @@ main.contact {
 /* Landscape phones and down */
 @media (max-width: 480px) {
   // HELP: why isn't this working???
-  header.contact {
-    h1 {
-      font-size: 2.2rem;
-    }  
+  html {
+    font-size: 95%;
   }
-}
+  // header.contact {
+  //   h1 {
+  //     font-size: 2.2rem;
+  //     }  
+  //   }
+  }
