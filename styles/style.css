@@ -276,8 +276,21 @@ p {
   display: flex;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+}
+
 header {
   background-color: #f6a823;
+}
+
+header.home h1 {
+  position: relative;
+  padding-left: 3.5rem;
+}
+header.home img.text {
+  position: absolute;
 }
 
 nav ul {

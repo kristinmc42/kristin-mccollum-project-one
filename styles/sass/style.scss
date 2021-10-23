@@ -17,7 +17,7 @@
 
 
 
-// styles
+// general styles
 // wrapper
  .wrapper {
     max-width: 1280px;
@@ -26,9 +26,26 @@
     display: flex;
   }
 
+// images
+img {
+  max-width: 100%;
+  display: block;
+}
+
 // header styles
 header {
   background-color: $orangeyYellow;
+}
+
+header.home {
+  h1 {
+    position: relative;
+    padding-left: 3.5rem;
+  }
+  img.text {
+    position: absolute;
+  }
+  
 }
 
 
