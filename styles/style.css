@@ -281,22 +281,34 @@ form {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  background-color: #f0efed;
 }
 form input[type=text],
 form input[type=email] {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+  height: 50px;
+  padding-left: 20px;
+  margin: 0 2px;
+  font-style: italic;
 }
-form textarea, form button {
+form textarea {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
+  resize: none;
+  padding: 20px 0 0 20px;
+  margin: 15px 2px;
+  font-style: italic;
 }
 form button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
   background-color: #05afc1;
-  text-transform: uppercase;
   padding: 10px;
+  margin: 0 2px;
 }
 
 .wrapper {
@@ -311,6 +323,10 @@ form button {
 img {
   max-width: 100%;
   display: block;
+}
+
+button {
+  border: none;
 }
 
 header {
