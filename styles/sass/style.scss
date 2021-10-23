@@ -100,7 +100,7 @@ header.contact {
   }
 }
 
-// nav styles
+// header nav styles
 nav {
   justify-content: center;
   ul {
@@ -135,7 +135,50 @@ nav {
 
 // main styles
 // contact page
-// main.contact {
-//   background-color: $whiteShade;
+main.contact {
+  background-color: $whiteShade;
 
-// }
+    .wrapper {
+      flex-wrap: wrap;
+
+     .contactText {
+      flex: 1 1 315px;
+      background-color: white;
+      margin-top: toRem(60);
+
+        nav.icons {
+          ul {
+            justify-content: flex-start;
+            margin-left: 0;
+            padding-left: 15px;
+            
+            li {
+              padding: 40px 15px 20px 15px;
+            }
+            a {
+              font-size: 1.6rem;
+              color: $orangeyYellow;
+            }
+          }
+          
+        }
+
+        address {
+          font-style: normal;
+          padding-left: toRem(30);
+          padding-bottom: toRem(30);
+
+            span {
+              display: block;
+              font-size: 1.3rem;
+              font-weight: bold;
+            }
+        }
+     }
+     form {
+       flex: 1 1 75%;
+     }
+
+    }
+
+}
