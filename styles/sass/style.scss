@@ -95,6 +95,7 @@ header.contact {
   }
   h1 {
     padding-top: 330px;
+    padding-left: 30px;
     margin: 0;
     font-size: 3.5rem;
   }
@@ -144,30 +145,28 @@ main.contact {
      .contactText {
       flex: 1 1 315px;
       background-color: white;
-      margin-top: toRem(60);
-
+      // max-width: 350px;
+      height: 280px;
+      margin: 60px 15px 0 15px;
+    
         nav.icons {
           ul {
             justify-content: flex-start;
             margin-left: 0;
             padding-left: 15px;
-            
             li {
               padding: 40px 15px 20px 15px;
             }
-            a {
-              font-size: 1.6rem;
-              color: $orangeyYellow;
-            }
+              a {
+                font-size: 1.6rem;
+                color: $orangeyYellow;
+              }
           }
-          
         }
-
         address {
           font-style: normal;
           padding-left: toRem(30);
           padding-bottom: toRem(30);
-
             span {
               display: block;
               font-size: 1.3rem;
@@ -176,7 +175,8 @@ main.contact {
         }
      }
      form {
-       flex: 1 1 75%;
+       flex: 1 1 60%;
+       margin: 58px 15px 50px 15px;
      }
 
     }

@@ -286,11 +286,12 @@ form {
 form input[type=text],
 form input[type=email] {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 200px;
-          flex: 1 1 200px;
-  height: 50px;
+      -ms-flex: 1 1 210px;
+          flex: 1 1 210px;
+  height: 65px;
   padding-left: 20px;
-  margin: 0 2px;
+  border: none;
+  margin: 8px 4px;
   font-style: italic;
 }
 form textarea {
@@ -299,7 +300,8 @@ form textarea {
           flex: 1 1 100%;
   resize: none;
   padding: 20px 0 0 20px;
-  margin: 15px 2px;
+  border: none;
+  margin: 10px 4px;
   font-style: italic;
 }
 form button {
@@ -308,7 +310,7 @@ form button {
           flex: 1 1 100%;
   background-color: #05afc1;
   padding: 10px;
-  margin: 0 2px;
+  margin: 0 4px;
 }
 
 footer {
@@ -387,6 +389,7 @@ header.contact .background {
 }
 header.contact h1 {
   padding-top: 330px;
+  padding-left: 30px;
   margin: 0;
   font-size: 3.5rem;
 }
@@ -442,7 +445,8 @@ main.contact .wrapper .contactText {
       -ms-flex: 1 1 315px;
           flex: 1 1 315px;
   background-color: white;
-  margin-top: 3.75rem;
+  height: 280px;
+  margin: 60px 15px 0 15px;
 }
 main.contact .wrapper .contactText nav.icons ul {
   -webkit-box-pack: start;
@@ -470,6 +474,7 @@ main.contact .wrapper .contactText address span {
 }
 main.contact .wrapper form {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 75%;
-          flex: 1 1 75%;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  margin: 58px 15px 50px 15px;
 }

@@ -6,10 +6,11 @@ form {
   background-color: $whiteShade;
     input[type="text"],
     input[type="email"] {
-      flex: 1 1 200px;
-      height: 50px;
+      flex: 1 1 210px;
+      height: 65px;
       padding-left: 20px;
-      margin: 0 2px;
+      border: none;
+      margin: 8px 4px;
       font-style: italic;
       }
   
@@ -17,7 +18,8 @@ form {
       flex: 1 1 100%;
       resize: none;
       padding: 20px 0 0 20px;
-      margin: 15px 2px;
+      border: none;
+      margin: 10px 4px;
       font-style: italic;
     }
 
@@ -25,7 +27,7 @@ form {
       flex: 1 1 100%;
       background-color: $accent;
       padding: 10px;
-      margin: 0 2px;
+      margin: 0 4px;
     }
 
 }
