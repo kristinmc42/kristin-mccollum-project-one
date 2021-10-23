@@ -32,6 +32,7 @@ img {
   display: block;
 }
 
+
 // header styles
 header {
   background-color: $orangeyYellow;
@@ -40,7 +41,18 @@ header {
 header.home {
   h1 {
     position: relative;
-    padding-left: 3.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .wrapper {
+    justify-content: space-evenly;
+  }
+
+  .headerImage {
+    width: 40%;
+    max-width: 320px;
+    box-shadow: 20px 20px white;
   }
   img.text {
     position: absolute;
@@ -51,11 +63,13 @@ header.home {
 
 // nav styles
 nav {
+  justify-content: center;
   ul {
     list-style: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
     li {
       text-transform: uppercase;
       padding: 20px;
@@ -64,14 +78,20 @@ nav {
         color: $black;
       }
       a.white {
-        color: $whiteShade;
+        color: white;
       }
       p {
         font-family: $loraFont;
         font-weight: 700;
         font-size: toRem(24);
+        margin: 0;
+      }
+      &:nth-of-type(3){
+        padding-top: 0;
+        padding-bottom: 0;
       }
     }
+    
   }
 }
 
