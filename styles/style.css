@@ -235,11 +235,11 @@ html {
   font-size: 100%;
   font-weight: 400;
   line-height: 2rem;
-  letter-spacing: 0rem;
+  letter-spacing: 0.0625rem;
   color: #2c2c2c;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, button {
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -248,11 +248,11 @@ h1 {
   font-family: "Lora", serif;
   font-size: 5rem;
   line-height: 5.75rem;
+  letter-spacing: 0rem;
 }
 
 h2, h3, h4, h5 {
   font-size: 2.625rem;
-  letter-spacing: 0.0625rem;
 }
 
 h3 {
@@ -268,7 +268,35 @@ h5 {
 }
 
 p {
-  font-size: 1.25pxrem;
+  font-size: 1.25rem;
+  letter-spacing: 0rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+form input[type=text],
+form input[type=email] {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+form textarea, form button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+form button {
+  background-color: #05afc1;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
 .wrapper {
