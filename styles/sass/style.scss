@@ -18,7 +18,32 @@
 
 
 // styles
-
+// nav styles
+nav {
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li {
+      padding: 20px;
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $black;
+      }
+      a.white {
+        color: $whiteShade;
+      }
+      p {
+        font-family: 'Lora', serif;
+        font-weight: 700;
+        font-size: toRem(24);
+        text-transform: uppercase;
+      }
+    }
+  }
+}
 
 h1 {
   color: $accent;
