@@ -12,6 +12,7 @@
 @import "colors";
 @import "textStyling";
 @import "forms";
+@import "footer";
 
 
 // put sass variables here if they use anything from the partials
@@ -44,7 +45,7 @@ header {
   background-color: $orangeyYellow;
 }
 
-// home page
+// home page header
 header.home {
   h1 {
     position: relative;
@@ -68,7 +69,7 @@ header.home {
   }
 }
 
-//blog page
+//blog page header
 header.blog {
   .background {
     background-image: url(../assets/blog-image-1.jpg);
@@ -84,7 +85,7 @@ header.blog {
   }
 }
 
-//contact page
+//contact page header
 header.contact {
   .background {
     background-image: url(../assets/contact-image-1.jpg);
@@ -132,3 +133,9 @@ nav {
   }
 }
 
+// main styles
+// contact page
+// main.contact {
+//   background-color: $whiteShade;
+
+// }
