@@ -59,7 +59,23 @@ header.home {
   img.text {
     position: absolute;
   }
-  
+}
+
+header.blog {
+  .background {
+    background-image: url(../assets/blog-image-1.jpg);
+    background-size: cover;
+    background-position: 100% 0;
+    height: 40vh;
+  }
+  .title {
+
+  }
+  h1 {
+    padding-top: 325px;
+    margin: 0;
+  }
+
 }
 
 
