@@ -239,7 +239,7 @@ html {
   color: #2c2c2c;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -250,7 +250,7 @@ h1 {
   line-height: 5.75rem;
 }
 
-h2, h3, h4 {
+h2, h3, h4, h5 {
   font-size: 2.625rem;
   letter-spacing: 0.0625rem;
 }
@@ -259,8 +259,12 @@ h3 {
   font-size: 2rem;
 }
 
-h4 {
+h4, h5 {
   font-size: 1.5rem;
+}
+
+h5 {
+  font-family: "Lora", serif;
 }
 
 p {
@@ -294,12 +298,16 @@ header.home .wrapper {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 header.home .headerImage {
   width: 40%;
   max-width: 320px;
   -webkit-box-shadow: 20px 20px white;
           box-shadow: 20px 20px white;
+  margin-bottom: -3.125rem;
 }
 header.home img.text {
   position: absolute;
@@ -325,19 +333,18 @@ nav ul {
 }
 nav ul li {
   text-transform: uppercase;
+  line-height: 1.8125rem;
   padding: 20px;
 }
 nav ul li a {
+  letter-spacing: 0.0625rem;
   text-decoration: none;
   color: #2c2c2c;
 }
 nav ul li a.white {
-  color: white;
+  color: #f6f6f6;
 }
-nav ul li p {
-  font-family: "Lora", serif;
-  font-weight: 700;
-  font-size: 1.5rem;
+nav ul li h5 {
   margin: 0;
 }
 nav ul li:nth-of-type(3) {

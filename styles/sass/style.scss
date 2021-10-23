@@ -47,12 +47,14 @@ header.home {
 
   .wrapper {
     justify-content: space-evenly;
+    align-items: center;
   }
 
   .headerImage {
     width: 40%;
     max-width: 320px;
     box-shadow: 20px 20px white;
+    margin-bottom: toRem(-50);
   }
   img.text {
     position: absolute;
@@ -72,18 +74,17 @@ nav {
     margin: 0;
     li {
       text-transform: uppercase;
+      line-height: toRem(29);
       padding: 20px;
       a {
+        letter-spacing: toRem(1);
         text-decoration: none;
         color: $black;
       }
       a.white {
-        color: white;
+        color: $whiteText;
       }
-      p {
-        font-family: $loraFont;
-        font-weight: 700;
-        font-size: toRem(24);
+      h5 {
         margin: 0;
       }
       &:nth-of-type(3){
