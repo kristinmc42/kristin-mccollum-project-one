@@ -352,6 +352,11 @@ main.blog div.wrapper {
   padding-top: 60px;
 }
 main.blog div.wrapper div.additionalInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 350px;
           flex: 1 1 350px;
@@ -359,7 +364,11 @@ main.blog div.wrapper div.additionalInfo {
 }
 main.blog div.wrapper div.additionalInfo aside.about,
 main.blog div.wrapper div.additionalInfo aside.recentPosts {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
   background-color: white;
+  max-height: 650px;
   padding: 30px;
   margin-bottom: 30px;
 }
@@ -367,6 +376,9 @@ main.blog div.wrapper div.additionalInfo aside.about a,
 main.blog div.wrapper div.additionalInfo aside.recentPosts a {
   text-decoration: none;
   color: #285e64;
+}
+main.blog div.wrapper div.additionalInfo aside.recentPosts {
+  max-height: 290px;
 }
 main.blog div.wrapper div.additionalInfo aside.recentPosts h4 {
   margin: 30px 0 15px 0;
@@ -588,6 +600,17 @@ nav ul li:nth-of-type(3) {
   padding-bottom: 0;
 }
 
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .blog .wrapper {
+    width: 90%;
+  }
+}
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {

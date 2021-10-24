@@ -148,9 +148,30 @@ nav {
 
 //media queries
 // home page
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
 
 
 //blog page
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .blog .wrapper {
+    width: 90%;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
 
 
 //contact page
@@ -168,7 +189,7 @@ nav {
     }
   }
 }
-
+// condense header
 @media (max-width: 560px){
   header.contact {
     li {

@@ -7,11 +7,15 @@ main.blog {
     justify-content: space-between;
     padding-top: 60px;
     div.additionalInfo {
+      display: flex;
+      flex-wrap: wrap;
       flex: 1 1 350px;
       margin: 0 10px;
       aside.about,
       aside.recentPosts  {
+        flex: 1 1 50%;
         background-color: white;
+        max-height: 650px;
         padding: 30px;
         margin-bottom: 30px;
           a {
@@ -20,6 +24,7 @@ main.blog {
           }
       }
       aside.recentPosts {
+        max-height: 290px;
         h4 {
           margin: 30px 0 15px 0;
         }
