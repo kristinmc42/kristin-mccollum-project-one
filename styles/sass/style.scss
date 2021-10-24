@@ -218,10 +218,36 @@ main.home {
 
   // figure 
     figure {
-      margin-left: 0;
-      margin-right: 0;
+      margin: 0;
     }
-  
+  // journey section
+  .journey {
+    background-color: $whiteShade;
+    padding-top: 80px;
+    .journeyImage {
+    flex: 2 1 30%;
+    position: relative;
+    background: orange;
+    height: 280px;
+    max-width: 280px;
+      img {
+        position: absolute;
+        max-width: 280px;
+        top: -20px;
+        left: -20px;
+      }
+    }
+    .journeyText {
+    flex: 1 1 65%;
+    padding: 100px 50px;
+    padding: 0 0 80px 100px;
+      button {
+        @include buttonFormat;
+      }
+    }
+
+
+  }
 }
 //end of home page main styles
 
