@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -323,24 +324,51 @@ footer p {
   color: #f6f6f6;
 }
 
-/* Portrait tablet and small desktops */
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-  .contact .wrapper {
-    width: 95%;
-  }
+main.blog {
+  background-color: #f0efed;
 }
-@media (max-width: 560px) {
-  header.contact li {
-    padding: 20px 10px;
-  }
+main.blog div.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 60px;
 }
-/* Landscape phones and down */
-@media (max-width: 480px) {
-  header.contact h1 {
-    font-size: 2.2rem;
-  }
+main.blog div.wrapper div.additionalInfo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 350px;
+          flex: 1 1 350px;
+  margin: 0 10px;
 }
+main.blog div.wrapper div.additionalInfo aside.about,
+main.blog div.wrapper div.additionalInfo aside.recentPosts {
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+main.blog div.wrapper div.additionalInfo aside.recentPosts ul {
+  list-style: none;
+  padding-left: 30px;
+}
+main.blog div.wrapper div.additionalInfo aside.recentPosts li::before {
+  content: "•";
+  color: #f6a823;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+main.blog div.wrapper div.blogposts {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 65%;
+          flex: 1 1 65%;
+  margin: 0 10px;
+  padding: 30px;
+  background-color: white;
+}
+
 .wrapper {
   max-width: 1280px;
   width: 80%;
@@ -455,11 +483,11 @@ nav ul li:nth-of-type(3) {
 main.contact {
   background-color: #f0efed;
 }
-main.contact .wrapper {
+main.contact div.wrapper {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-main.contact .wrapper .contactText {
+main.contact div.wrapper div.contactText {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 315px;
           flex: 1 1 315px;
@@ -467,33 +495,52 @@ main.contact .wrapper .contactText {
   height: 280px;
   margin: 60px 15px 0 15px;
 }
-main.contact .wrapper .contactText nav.icons ul {
+main.contact div.wrapper div.contactText nav.icons ul {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-left: 0;
   padding-left: 15px;
 }
-main.contact .wrapper .contactText nav.icons ul li {
+main.contact div.wrapper div.contactText nav.icons ul li {
   padding: 40px 15px 20px 15px;
 }
-main.contact .wrapper .contactText nav.icons ul a {
+main.contact div.wrapper div.contactText nav.icons ul a {
   font-size: 1.6rem;
   color: #f6a823;
 }
-main.contact .wrapper .contactText address {
+main.contact div.wrapper div.contactText address {
   font-style: normal;
   padding-left: 1.875rem;
   padding-bottom: 1.875rem;
 }
-main.contact .wrapper .contactText address span {
+main.contact div.wrapper div.contactText address span {
   display: block;
   font-size: 1.3rem;
   font-weight: bold;
 }
-main.contact .wrapper form {
+main.contact div.wrapper form {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 60%;
           flex: 1 1 60%;
   margin: 58px 15px 50px 15px;
+}
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .contact .wrapper {
+    width: 95%;
+  }
+}
+@media (max-width: 560px) {
+  header.contact li {
+    padding: 20px 10px;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  html {
+    font-size: 95%;
+  }
 }

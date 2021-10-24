@@ -1,0 +1,40 @@
+//blog page
+main.blog {
+  background-color: $whiteShade;
+  div.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    div.additionalInfo {
+      flex: 1 1 350px;
+      margin: 0 10px;
+      aside.about,
+      aside.recentPosts  {
+        background-color: white;
+        padding: 30px;
+        margin-bottom: 30px;
+      }
+      aside.recentPosts {
+        ul {
+          list-style: none;
+          padding-left: 30px;
+        }
+        li::before {
+          content: "\2022";
+          color: $orangeyYellow;
+          font-weight: bold;
+          display: inline-block;
+          width: 1em;
+          margin-left: -1em;
+        }
+      }
+
+    }
+    div.blogposts {
+      flex: 1 1 65%;
+      margin: 0 10px;
+      padding: 30px;
+      background-color: white;
+    }
+  }
+}

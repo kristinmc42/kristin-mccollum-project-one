@@ -13,7 +13,7 @@
 @import "textStyling";
 @import "forms";
 @import "footer";
-@import "mediaQueries";
+@import "blog";
 
 
 // put sass variables here if they use anything from the partials
@@ -102,7 +102,7 @@ header.contact {
   }
 }
 
-// header nav styles
+// nav styles
 nav {
   justify-content: center;
   ul {
@@ -140,18 +140,16 @@ nav {
 //home page
 
 //end of home page main styles
-//blog page
 
 
-// end of blog page main styles
 // contact page
 main.contact {
   background-color: $whiteShade;
 
-    .wrapper {
+    div.wrapper {
       flex-wrap: wrap;
 
-     .contactText {
+     div.contactText {
       flex: 1 1 315px;
       background-color: white;
       // max-width: 350px;
