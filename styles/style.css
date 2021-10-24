@@ -273,6 +273,22 @@ p {
   letter-spacing: 0rem;
 }
 
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+:-moz-placeholder {
+  font-style: italic;
+}
+
+::-moz-placeholder {
+  font-style: italic;
+}
+
+:-ms-input-placeholder {
+  font-style: italic;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -293,7 +309,6 @@ form input[type=email] {
   padding-left: 20px;
   border: none;
   margin: 8px 4px;
-  font-style: italic;
 }
 form textarea {
   -webkit-box-flex: 1;
@@ -303,7 +318,6 @@ form textarea {
   padding: 20px 0 0 20px;
   border: none;
   margin: 10px 4px;
-  font-style: italic;
 }
 form button {
   -webkit-box-flex: 1;
