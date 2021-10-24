@@ -628,10 +628,13 @@ nav ul li:nth-of-type(3) {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .blog .additionalInfo .about {
+    margin: 0;
+  }
   .blog .additionalInfo .about img {
     display: none;
   }
-  .blog .additionalInfo .additionalInfo > h4 {
+  .blog .additionalInfo .recentPosts {
     margin: 0;
   }
 }

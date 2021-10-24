@@ -189,23 +189,24 @@ nav {
 
 // collapse asides
 @media (max-width: 624px){
-.blog {
-  .additionalInfo {
-    display: flex;
-    flex-wrap: wrap;
-    .about {
-      img {
-        display: none;
-      }
-    }
-    .additionalInfo > h4 {
-     
+  .blog {
+    .additionalInfo {
+      display: flex;
+      flex-wrap: wrap;
+      .about {
+        // HELP: this is not working
         margin: 0;
-     
-
+        img {
+          display: none;
+        }
+      }
+      .recentPosts {
+        // HELP - this is not working
+        margin: 0;
+      }
+      
     }
   }
-}
 }
 
 /* Landscape phones and down */
