@@ -690,6 +690,10 @@ main.home .travels .travelsImage img {
   top: -20px;
   left: -20px;
 }
+main.home figure {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */

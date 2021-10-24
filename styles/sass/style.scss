@@ -145,6 +145,7 @@ nav {
 // main styles
 //home page
 main.home {
+  // about section
   .about {
     background-color: $whiteShade;
     .wrapper {
@@ -158,6 +159,7 @@ main.home {
       }
     }
   }
+  // favourites section
   .favourite {
     display: flex;
     .favouriteImage {
@@ -181,6 +183,7 @@ main.home {
       }
     }
   }
+  // travels section
   .travels {
     display: flex;
     padding-top: 60px;
@@ -209,9 +212,15 @@ main.home {
         left: -20px;
       }
     }
-
   }
+  // detailed links section
 
+
+  // figure 
+    figure {
+      margin-left: 0;
+      margin-right: 0;
+    }
   
 }
 //end of home page main styles
