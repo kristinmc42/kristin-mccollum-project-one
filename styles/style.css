@@ -326,6 +326,7 @@ footer p {
 
 main.blog {
   background-color: #f0efed;
+  padding-bottom: 50px;
 }
 main.blog div.wrapper {
   display: -webkit-box;
@@ -348,9 +349,20 @@ main.blog div.wrapper div.additionalInfo aside.recentPosts {
   padding: 30px;
   margin-bottom: 30px;
 }
+main.blog div.wrapper div.additionalInfo aside.about a,
+main.blog div.wrapper div.additionalInfo aside.recentPosts a {
+  text-decoration: none;
+  color: #285e64;
+}
+main.blog div.wrapper div.additionalInfo aside.recentPosts h4 {
+  margin: 30px 0 15px 0;
+}
 main.blog div.wrapper div.additionalInfo aside.recentPosts ul {
   list-style: none;
   padding-left: 30px;
+}
+main.blog div.wrapper div.additionalInfo aside.recentPosts li a {
+  color: #2c2c2c;
 }
 main.blog div.wrapper div.additionalInfo aside.recentPosts li::before {
   content: "•";
@@ -360,13 +372,49 @@ main.blog div.wrapper div.additionalInfo aside.recentPosts li::before {
   width: 1em;
   margin-left: -1em;
 }
-main.blog div.wrapper div.blogposts {
+main.blog div.wrapper div.blogPosts {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 65%;
           flex: 1 1 65%;
-  margin: 0 10px;
-  padding: 30px;
+}
+main.blog div.wrapper div.blogPosts article {
   background-color: white;
+  padding: 40px 40px 30px 40px;
+  margin: 0 4px 20px 4px;
+}
+main.blog div.wrapper div.blogPosts article h3 {
+  margin: 0;
+}
+main.blog div.wrapper div.blogPosts article strong {
+  color: #285e64;
+}
+main.blog div.wrapper div.blogPosts article .thumbnail {
+  min-width: 90px;
+}
+main.blog div.wrapper div.blogPosts article .content {
+  padding-left: 20px;
+}
+main.blog div.wrapper div.blogPosts article a {
+  text-decoration: none;
+  color: #285e64;
+  font-style: italic;
+}
+main.blog div.wrapper div.blogPosts article:first-of-type, main.blog div.wrapper div.blogPosts article:last-of-type {
+  border-bottom: 4px solid #f6a823;
+}
+main.blog div.wrapper div.blogPosts article:first-of-type > p:nth-child(8) {
+  margin-bottom: 0;
+}
+main.blog div.wrapper div.blogPosts article:nth-of-type(2) {
+  margin: 20px 4px;
+}
+main.blog div.wrapper div.blogPosts article:not(:first-of-type) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main.blog div.wrapper div.blogPosts article:not(:first-of-type) p {
+  margin: 0;
 }
 
 main.contact {
@@ -468,7 +516,7 @@ header.blog .background {
   height: 40vh;
 }
 header.blog h1 {
-  padding-top: 325px;
+  padding-top: 335px;
   margin: 0;
   font-size: 3.5rem;
 }

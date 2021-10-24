@@ -1,6 +1,7 @@
 //blog page
 main.blog {
   background-color: $whiteShade;
+  padding-bottom: 50px;
   div.wrapper {
     display: flex;
     justify-content: space-between;
@@ -13,11 +14,23 @@ main.blog {
         background-color: white;
         padding: 30px;
         margin-bottom: 30px;
+          a {
+            text-decoration: none;
+            color: $darkGreyBlue;
+          }
       }
       aside.recentPosts {
+        h4 {
+          margin: 30px 0 15px 0;
+        }
         ul {
           list-style: none;
           padding-left: 30px;
+        }
+        li {
+          a {
+            color: $black;
+          }
         }
         li::before {
           content: "\2022";
@@ -28,13 +41,49 @@ main.blog {
           margin-left: -1em;
         }
       }
-
     }
-    div.blogposts {
+    div.blogPosts {
       flex: 1 1 65%;
-      margin: 0 10px;
-      padding: 30px;
-      background-color: white;
+      article {
+        background-color: white;
+        padding: 40px 40px 30px 40px;
+        margin: 0 4px 20px 4px;
+        h3 {
+          margin: 0;
+        }
+        strong {
+          color: $darkGreyBlue;
+        }
+        .thumbnail {
+          min-width: 90px;
+        }
+        .content {
+          padding-left: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: $darkGreyBlue;
+            font-style: italic;
+          }
+          &:first-of-type,
+          &:last-of-type {
+            border-bottom: 4px solid $orangeyYellow;
+          }
+          &:first-of-type {
+            > p:nth-child(8){
+              margin-bottom: 0;
+            }
+          }
+          &:nth-of-type(2){
+            margin: 20px 4px;
+          }
+          &:not(:first-of-type){
+            display: flex;
+            p {
+              margin: 0;
+            }
+        }
+      }
     }
   }
 }
