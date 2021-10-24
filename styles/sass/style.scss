@@ -146,13 +146,40 @@ nav {
 //home page
 main.home {
   .about {
+    background-color: $whiteShade;
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      padding: 100px 100px 100px 0;
+      button {
+        @include buttonFormat;
+        align-self: flex-start;
+        padding: 12px 20px;
+      }
+    }
+  }
+  .favourite {
     display: flex;
-    flex-direction: column;
-    padding: 100px 100px 100px 0;
-    button {
-      @include buttonFormat;
-      align-self: flex-start;
-      padding: 12px 20px;
+    .favouriteImage {
+      flex: 1 1 50%;
+      background-color: $rustRed;
+      position: relative;
+      height: 345px;
+      margin-top: -25px;
+      img {
+        max-width: 555px;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+      }
+      }
+
+    .favouriteText {
+      flex: 2 1 50%;
+      padding: 80px 80px 0 80px;
+      button {
+        @include buttonFormat;
+      }
     }
   }
 }
