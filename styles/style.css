@@ -369,6 +369,52 @@ main.blog div.wrapper div.blogposts {
   background-color: white;
 }
 
+main.contact {
+  background-color: #f0efed;
+}
+main.contact div.wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+main.contact div.wrapper div.contactText {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 315px;
+          flex: 1 1 315px;
+  background-color: white;
+  height: 280px;
+  margin: 60px 15px 0 15px;
+}
+main.contact div.wrapper div.contactText nav.icons ul {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: 0;
+  padding-left: 15px;
+}
+main.contact div.wrapper div.contactText nav.icons ul li {
+  padding: 40px 15px 20px 15px;
+}
+main.contact div.wrapper div.contactText nav.icons ul a {
+  font-size: 1.6rem;
+  color: #f6a823;
+}
+main.contact div.wrapper div.contactText address {
+  font-style: normal;
+  padding-left: 1.875rem;
+  padding-bottom: 1.875rem;
+}
+main.contact div.wrapper div.contactText address span {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+main.contact div.wrapper form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  margin: 58px 15px 50px 15px;
+}
+
 .wrapper {
   max-width: 1280px;
   width: 80%;
@@ -478,52 +524,6 @@ nav ul li h5 {
 nav ul li:nth-of-type(3) {
   padding-top: 0;
   padding-bottom: 0;
-}
-
-main.contact {
-  background-color: #f0efed;
-}
-main.contact div.wrapper {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-main.contact div.wrapper div.contactText {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 315px;
-          flex: 1 1 315px;
-  background-color: white;
-  height: 280px;
-  margin: 60px 15px 0 15px;
-}
-main.contact div.wrapper div.contactText nav.icons ul {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-left: 0;
-  padding-left: 15px;
-}
-main.contact div.wrapper div.contactText nav.icons ul li {
-  padding: 40px 15px 20px 15px;
-}
-main.contact div.wrapper div.contactText nav.icons ul a {
-  font-size: 1.6rem;
-  color: #f6a823;
-}
-main.contact div.wrapper div.contactText address {
-  font-style: normal;
-  padding-left: 1.875rem;
-  padding-bottom: 1.875rem;
-}
-main.contact div.wrapper div.contactText address span {
-  display: block;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-main.contact div.wrapper form {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 60%;
-          flex: 1 1 60%;
-  margin: 58px 15px 50px 15px;
 }
 
 /* Portrait tablet and small desktops */
