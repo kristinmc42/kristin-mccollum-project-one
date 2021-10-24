@@ -168,9 +168,49 @@ nav {
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  main.blog {
+    .wrapper {
+      flex-wrap: wrap;
+      .additionalInfo {
+        display: flex;
+        .about {
+          margin-right: 10px;
+        }
+        .additionalInfo {
+          margin-left: 10px;
+        }
+      }
+    }
+    // h4 {
+    //   font-style: 1.1rem;
+    // }
+  }
 }
+
+// collapse asides
+@media (max-width: 624px){
+.blog {
+  .additionalInfo {
+    display: flex;
+    flex-wrap: wrap;
+    .about {
+      img {
+        display: none;
+      }
+    }
+    .additionalInfo > h4 {
+     
+        margin: 0;
+     
+
+    }
+  }
+}
+}
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  
 }
 
 
