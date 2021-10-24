@@ -18,7 +18,13 @@
 
 
 // put sass variables here if they use anything from the partials
+@mixin buttonFormat {
 
+  margin: 0;
+  padding: 12px 20px;
+  background-color: $accent;
+  border: none;
+}
 
 
 // general styles
@@ -51,8 +57,7 @@ header {
 header.home {
   h1 {
     position: relative;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding: 4rem;
   }
 
   .wrapper {
@@ -139,7 +144,18 @@ nav {
 
 // main styles
 //home page
-
+main.home {
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 100px 100px 0;
+    button {
+      @include buttonFormat;
+      align-self: flex-start;
+      padding: 12px 20px;
+    }
+  }
+}
 //end of home page main styles
 
 
