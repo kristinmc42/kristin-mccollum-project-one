@@ -173,7 +173,6 @@ main.home {
         bottom: 20px;
       }
       }
-
     .favouriteText {
       flex: 2 1 50%;
       padding: 80px 80px 0 80px;
@@ -182,6 +181,38 @@ main.home {
       }
     }
   }
+  .travels {
+    display: flex;
+    padding-top: 60px;
+    .travelsText {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 50%;
+      padding: 80px 80px 80px 100px;
+      text-align: right;
+      padding-top: 0px;
+      button {
+        @include buttonFormat;
+        align-self: flex-end;
+      }
+    }
+    .travelsImage {
+      flex: 2 1 50%;
+      background-color: orange;
+      position: relative;
+      margin-top: 20px;
+      height: 350px;
+      img {
+        position: absolute;
+        max-width: 555px;
+        top: -20px;
+        left: -20px;
+      }
+    }
+
+  }
+
+  
 }
 //end of home page main styles
 
