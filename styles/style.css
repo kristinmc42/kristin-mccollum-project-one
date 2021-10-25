@@ -690,8 +690,42 @@ main.home .travels .travelsImage img {
   top: -20px;
   left: -20px;
 }
+main.home .detailedLinks {
+  background-color: #f0efed;
+}
+main.home .detailedLinks .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 60px;
+  padding: 80px 0 80px 40px;
+}
+main.home .detailedLinks .wrapper a {
+  text-decoration: none;
+  position: relative;
+  color: #2c2c2c;
+  padding-top: 11px;
+}
+main.home .detailedLinks .wrapper i {
+  background-color: #f6a823;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  position: absolute;
+  left: -70px;
+  padding: 15px;
+}
+main.home .detailedLinks .wrapper .about, main.home .detailedLinks .wrapper .contact {
+  padding-left: 20px;
+}
+main.home .detailedLinks .wrapper .grid h3 {
+  padding-top: 10px;
+}
 main.home figure {
   margin: 0;
+  background-color: #f0efed;
+}
+main.home figure img {
+  margin: 0 auto;
 }
 main.home .journey {
   background-color: #f0efed;
@@ -730,7 +764,7 @@ main.home .gallery ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-gap: 40px;
+  gap: 40px;
   padding: 70px 0;
 }
 

@@ -19,13 +19,20 @@
 
 // put sass variables here if they use anything from the partials
 @mixin buttonFormat {
-
   margin: 0;
   padding: 12px 20px;
   background-color: $accent;
   border: none;
 }
 
+@mixin roundIcons {
+  background-color: $orangeyYellow;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  position: absolute;
+  left: -70px;
+  padding: 15px;
+}
 
 // general styles
 // wrapper
@@ -214,11 +221,41 @@ main.home {
     }
   }
   // detailed links section
-
+  .detailedLinks {
+    background-color: $whiteShade;
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 60px;
+      padding: 80px 0 80px 40px;
+        a {
+          text-decoration: none;
+          position: relative;
+          color: $black;
+          padding-top: 11px; 
+        }
+        i {
+          @include roundIcons;
+        }
+        .about, .contact{
+          padding-left: 20px;
+        }
+        .grid {
+          h3 {
+            padding-top: 10px;
+          }
+        }
+    }
+  }
 
   // figure 
     figure {
       margin: 0;
+      background-color: $whiteShade;
+      img{
+        margin: 0 auto;
+      }
     }
   // journey section
   .journey {
@@ -253,7 +290,7 @@ main.home {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr;
-      grid-gap: 40px;
+      gap: 40px;
       padding: 70px 0;
     }
   }
