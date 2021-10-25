@@ -245,8 +245,17 @@ main.home {
         @include buttonFormat;
       }
     }
-
-
+  }
+  // gallery section
+  .gallery {
+    ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
+      grid-gap: 40px;
+      padding: 70px 0;
+    }
   }
 }
 //end of home page main styles

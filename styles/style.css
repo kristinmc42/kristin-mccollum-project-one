@@ -725,6 +725,14 @@ main.home .journey .journeyText button {
   background-color: #05afc1;
   border: none;
 }
+main.home .gallery ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 40px;
+  padding: 70px 0;
+}
 
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
