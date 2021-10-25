@@ -506,7 +506,8 @@ header {
 
 header.home h1 {
   position: relative;
-  padding: 4rem;
+  font-size: 8rem;
+  padding: 5rem;
 }
 header.home .wrapper {
   -webkit-box-pack: space-evenly;
@@ -516,9 +517,12 @@ header.home .wrapper {
       -ms-flex-align: center;
           align-items: center;
 }
+header.home div.wrapper:nth-child(2) {
+  padding-top: 40px;
+}
 header.home .headerImage {
   width: 40%;
-  max-width: 320px;
+  max-width: 500px;
   -webkit-box-shadow: 20px 20px white;
           box-shadow: 20px 20px white;
   margin-bottom: -3.125rem;
