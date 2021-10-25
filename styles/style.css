@@ -679,7 +679,7 @@ main.home .travels .travelsImage {
   -webkit-box-flex: 2;
       -ms-flex: 2 1 50%;
           flex: 2 1 50%;
-  background-color: orange;
+  background-color: #f6a823;
   position: relative;
   margin-top: 20px;
   height: 350px;
@@ -692,13 +692,15 @@ main.home .travels .travelsImage img {
 }
 main.home .detailedLinks {
   background-color: #f0efed;
+  margin-top: -50px;
+  padding-top: 50px;
 }
 main.home .detailedLinks .wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 60px;
-  padding: 80px 0 80px 40px;
+  padding: 80px 0 40px 40px;
 }
 main.home .detailedLinks .wrapper a {
   text-decoration: none;
