@@ -18,11 +18,14 @@
 
 
 // put sass variables here if they use anything from the partials
-@mixin buttonFormat {
+@mixin buttonAnchors {
   margin: 0;
-  padding: 13px 25px;
+  padding: 10px 25px;
   background-color: $accent;
-  border: none;
+  color: $black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
   letter-spacing: toRem(1);
 }
 
@@ -163,8 +166,8 @@ main.home {
       display: flex;
       flex-direction: column;
       padding: 120px 100px 140px 0;
-      button {
-        @include buttonFormat;
+      a.button {
+        @include buttonAnchors;
         align-self: flex-start;
       }
     }
@@ -188,8 +191,9 @@ main.home {
     .favouriteText {
       flex: 2 1 50%;
       padding: 80px 100px 0 100px;
-      button {
-        @include buttonFormat;
+      a.button {
+        @include buttonAnchors;
+        width: 170px;
       }
     }
   }
@@ -204,8 +208,8 @@ main.home {
       padding: 20px 100px 140px 100px;
       text-align: right;
       padding-top: 0px;
-      button {
-        @include buttonFormat;
+      a.button {
+        @include buttonAnchors;
         align-self: flex-end;
       }
     }
@@ -291,8 +295,8 @@ main.home {
     p {
       padding: 15px 0
     }
-      button {
-        @include buttonFormat;
+      a.button {
+        @include buttonAnchors;
       }
     }
   }

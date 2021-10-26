@@ -275,7 +275,7 @@ p {
   letter-spacing: 0rem;
 }
 
-a, button {
+a {
   font-size: 1.25rem;
 }
 
@@ -621,11 +621,14 @@ main.home .about .wrapper {
           flex-direction: column;
   padding: 120px 100px 140px 0;
 }
-main.home .about .wrapper button {
+main.home .about .wrapper a.button {
   margin: 0;
-  padding: 13px 25px;
+  padding: 10px 25px;
   background-color: #05afc1;
-  border: none;
+  color: #2c2c2c;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
   letter-spacing: 0.0625rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -656,12 +659,16 @@ main.home .favourite .favouriteText {
           flex: 2 1 50%;
   padding: 80px 100px 0 100px;
 }
-main.home .favourite .favouriteText button {
+main.home .favourite .favouriteText a.button {
   margin: 0;
-  padding: 13px 25px;
+  padding: 10px 25px;
   background-color: #05afc1;
-  border: none;
+  color: #2c2c2c;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
   letter-spacing: 0.0625rem;
+  width: 170px;
 }
 main.home .travels {
   display: -webkit-box;
@@ -684,11 +691,14 @@ main.home .travels .travelsText {
   text-align: right;
   padding-top: 0px;
 }
-main.home .travels .travelsText button {
+main.home .travels .travelsText a.button {
   margin: 0;
-  padding: 13px 25px;
+  padding: 10px 25px;
   background-color: #05afc1;
-  border: none;
+  color: #2c2c2c;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
   letter-spacing: 0.0625rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -780,11 +790,14 @@ main.home .journey .journeyText {
 main.home .journey .journeyText p {
   padding: 15px 0;
 }
-main.home .journey .journeyText button {
+main.home .journey .journeyText a.button {
   margin: 0;
-  padding: 13px 25px;
+  padding: 10px 25px;
   background-color: #05afc1;
-  border: none;
+  color: #2c2c2c;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
   letter-spacing: 0.0625rem;
 }
 main.home .gallery ul {
