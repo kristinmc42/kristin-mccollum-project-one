@@ -1,18 +1,39 @@
 // contact page
+
+//contact header styles
+header.contact {
+  .background {
+    background-image: url(../assets/contact-image-1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 43vh;
+  }
+  h1 {
+    padding-top: 360px;
+    padding-left: 20px;
+    margin: 0;
+    font-size: 5.5rem;
+  }
+}
+
+// contact main styles
 main.contact {
   background-color: $whiteShade;
-
-    div.wrapper {
+    .wrapper {
       flex-wrap: wrap;
       padding-top: 35px;
       padding-bottom: 45px;
       width: 90%;
-     div.contactText {
+     .contactText {
       flex: 1 1 315px;
       background-color: white;
       // max-width: 350px;
       height: 315px;
-      margin: 64px 15px 0 15px;
+      // margin: 64px 15px 0 15px;
+      margin-top: 64px;
+      margin-right: 15px;
+      margin-bottom: 0;
+      margin-left: 15px;
     
         nav.icons {
           ul {
@@ -52,3 +73,36 @@ main.contact {
     }
 }
 //end of contact page main styles
+
+// media queries
+@media (max-width:940px){
+  header.contact h1 {
+    font-size: 4.8rem;
+  }
+  main.contact{
+    .wrapper {
+      .contactText, form{
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header.contact .wrapper {
+    width: 95%;
+  }
+  header.contact h1 {
+    font-size: 3.5rem;
+  }
+}
+
+
+/* Landscape phones and down */
+@media (max-width:480px){
+  header.contact h1 {
+    font-size: 2.5rem;
+  }
+}

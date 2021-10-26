@@ -345,11 +345,78 @@ footer p {
   color: #f6f6f6;
 }
 
+nav {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 10px;
+}
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  text-transform: uppercase;
+  line-height: 1.8125rem;
+  padding: 20px;
+}
+nav ul li a {
+  letter-spacing: 0.0625rem;
+  text-decoration: none;
+  color: #2c2c2c;
+  font-size: 20px;
+}
+nav ul li a.white {
+  color: #f6f6f6;
+  font-size: 20px;
+}
+nav ul li h5 {
+  margin: 0;
+}
+nav ul li:nth-of-type(3) {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header > nav ul li {
+    padding: 20px 10px;
+  }
+}
+@media (max-width: 615px) {
+  header > nav ul li :not(li > h5) {
+    opacity: 0;
+  }
+}
+/* Landscape phones and down */
+header.blog .background {
+  background-image: url(../assets/blog-image-1.jpg);
+  background-size: cover;
+  background-position: 100% 0;
+  height: 43vh;
+}
+header.blog h1 {
+  padding-top: 360px;
+  margin: 0;
+  font-size: 5.5rem;
+}
+
 main.blog {
   background-color: #f0efed;
   padding-bottom: 50px;
 }
-main.blog div.wrapper {
+main.blog .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,14 +425,14 @@ main.blog div.wrapper {
           justify-content: space-between;
   padding-top: 100px;
 }
-main.blog div.wrapper div.additionalInfo {
+main.blog .wrapper .additionalInfo {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 400px;
           flex: 1 1 400px;
   margin: 0 40px 0 10px;
 }
-main.blog div.wrapper div.additionalInfo aside.about,
-main.blog div.wrapper div.additionalInfo aside.recentPosts {
+main.blog .wrapper .additionalInfo .about,
+main.blog .wrapper .additionalInfo .recentPosts {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
@@ -373,23 +440,23 @@ main.blog div.wrapper div.additionalInfo aside.recentPosts {
   padding: 30px;
   margin-bottom: 30px;
 }
-main.blog div.wrapper div.additionalInfo aside.about h4,
-main.blog div.wrapper div.additionalInfo aside.recentPosts h4 {
+main.blog .wrapper .additionalInfo .about h4,
+main.blog .wrapper .additionalInfo .recentPosts h4 {
   padding-top: 20px;
 }
-main.blog div.wrapper div.additionalInfo aside.about a,
-main.blog div.wrapper div.additionalInfo aside.recentPosts a {
+main.blog .wrapper .additionalInfo .about a,
+main.blog .wrapper .additionalInfo .recentPosts a {
   text-decoration: none;
   color: #285e64;
 }
-main.blog div.wrapper div.additionalInfo aside.recentPosts ul {
+main.blog .wrapper .additionalInfo .recentPosts ul {
   list-style: none;
   padding-left: 30px;
 }
-main.blog div.wrapper div.additionalInfo aside.recentPosts li a {
+main.blog .wrapper .additionalInfo .recentPosts li a {
   color: #2c2c2c;
 }
-main.blog div.wrapper div.additionalInfo aside.recentPosts li::before {
+main.blog .wrapper .additionalInfo .recentPosts li::before {
   content: "•";
   color: #f6a823;
   font-weight: bold;
@@ -397,105 +464,187 @@ main.blog div.wrapper div.additionalInfo aside.recentPosts li::before {
   width: 1em;
   margin-left: -1em;
 }
-main.blog div.wrapper div.blogPosts {
+main.blog .wrapper .blogPosts {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 70%;
           flex: 1 1 70%;
 }
-main.blog div.wrapper div.blogPosts article {
+main.blog .wrapper .blogPosts article {
   background-color: white;
   padding: 40px 40px 30px 40px;
   margin: 0 4px 20px 4px;
 }
-main.blog div.wrapper div.blogPosts article h3 {
+main.blog .wrapper .blogPosts article h3 {
   margin: 0;
 }
-main.blog div.wrapper div.blogPosts article strong {
+main.blog .wrapper .blogPosts article strong {
   color: #285e64;
 }
-main.blog div.wrapper div.blogPosts article .thumbnail {
+main.blog .wrapper .blogPosts article .thumbnail {
   min-width: 90px;
 }
-main.blog div.wrapper div.blogPosts article .content {
+main.blog .wrapper .blogPosts article .content {
   padding-left: 20px;
 }
-main.blog div.wrapper div.blogPosts article a {
+main.blog .wrapper .blogPosts article a {
   text-decoration: none;
   color: #285e64;
   font-style: italic;
 }
-main.blog div.wrapper div.blogPosts article:first-of-type, main.blog div.wrapper div.blogPosts article:last-of-type {
+main.blog .wrapper .blogPosts article:first-of-type, main.blog .wrapper .blogPosts article:last-of-type {
   border-bottom: 6px solid #f6a823;
 }
-main.blog div.wrapper div.blogPosts article:first-of-type > p:nth-child(8) {
+main.blog .wrapper .blogPosts article:first-of-type > p:nth-child(8) {
   margin-bottom: 0;
 }
-main.blog div.wrapper div.blogPosts article:nth-of-type(2) {
+main.blog .wrapper .blogPosts article:nth-of-type(2) {
   margin: 30px 4px 20px 4px;
 }
-main.blog div.wrapper div.blogPosts article:not(:first-of-type) {
+main.blog .wrapper .blogPosts article:not(:first-of-type) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-main.blog div.wrapper div.blogPosts article:not(:first-of-type) p {
+main.blog .wrapper .blogPosts article:not(:first-of-type) p {
   margin: 0;
+}
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .blog .wrapper {
+    width: 90%;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  main.blog .wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main.blog .wrapper .additionalInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 10px;
+  }
+  main.blog .wrapper .additionalInfo .about {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 624px) {
+  main.blog .wrapper .additionalInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main.blog .wrapper .additionalInfo .about {
+    margin: 0;
+  }
+  main.blog .wrapper .additionalInfo .about img {
+    display: none;
+  }
+  main.blog .wrapper .additionalInfo .recentPosts {
+    margin: 0;
+  }
+}
+header.contact .background {
+  background-image: url(../assets/contact-image-1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 43vh;
+}
+header.contact h1 {
+  padding-top: 360px;
+  padding-left: 20px;
+  margin: 0;
+  font-size: 5.5rem;
 }
 
 main.contact {
   background-color: #f0efed;
 }
-main.contact div.wrapper {
+main.contact .wrapper {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-top: 35px;
   padding-bottom: 45px;
   width: 90%;
 }
-main.contact div.wrapper div.contactText {
+main.contact .wrapper .contactText {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 315px;
           flex: 1 1 315px;
   background-color: white;
   height: 315px;
-  margin: 64px 15px 0 15px;
+  margin-top: 64px;
+  margin-right: 15px;
+  margin-bottom: 0;
+  margin-left: 15px;
 }
-main.contact div.wrapper div.contactText nav.icons ul {
+main.contact .wrapper .contactText nav.icons ul {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   margin-left: 0;
   padding-left: 15px;
 }
-main.contact div.wrapper div.contactText nav.icons ul li {
+main.contact .wrapper .contactText nav.icons ul li {
   padding: 40px 15px 20px 15px;
 }
-main.contact div.wrapper div.contactText nav.icons ul a {
+main.contact .wrapper .contactText nav.icons ul a {
   font-size: 2rem;
   color: #f6a823;
 }
-main.contact div.wrapper div.contactText address {
+main.contact .wrapper .contactText address {
   font-style: normal;
   padding-left: 30px;
   padding-bottom: 30px;
   font-size: 1.25rem;
 }
-main.contact div.wrapper div.contactText address span {
+main.contact .wrapper .contactText address span {
   display: block;
   font-size: 1.4rem;
   font-weight: bold;
   padding-bottom: 15px;
 }
-main.contact div.wrapper form {
+main.contact .wrapper form {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 60%;
           flex: 1 1 60%;
   margin: 58px 0 50px 15px;
 }
-main.contact div.wrapper form textarea {
+main.contact .wrapper form textarea {
   padding-bottom: 75px;
 }
 
+@media (max-width: 940px) {
+  header.contact h1 {
+    font-size: 4.8rem;
+  }
+
+  main.contact .wrapper .contactText, main.contact .wrapper form {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header.contact .wrapper {
+    width: 95%;
+  }
+
+  header.contact h1 {
+    font-size: 3.5rem;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  header.contact h1 {
+    font-size: 2.5rem;
+  }
+}
 .wrapper {
   max-width: 1280px;
   width: 80%;
@@ -538,74 +687,6 @@ header.home .headerImage {
 }
 header.home img.text {
   position: absolute;
-}
-
-header.blog .background {
-  background-image: url(../assets/blog-image-1.jpg);
-  background-size: cover;
-  background-position: 100% 0;
-  height: 43vh;
-}
-header.blog h1 {
-  padding-top: 360px;
-  margin: 0;
-  font-size: 5.5rem;
-}
-
-header.contact .background {
-  background-image: url(../assets/contact-image-1.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 43vh;
-}
-header.contact h1 {
-  padding-top: 360px;
-  padding-left: 20px;
-  margin: 0;
-  font-size: 5.5rem;
-}
-
-nav {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 10px;
-}
-nav ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0;
-  padding: 0;
-}
-nav ul li {
-  text-transform: uppercase;
-  line-height: 1.8125rem;
-  padding: 20px;
-}
-nav ul li a {
-  letter-spacing: 0.0625rem;
-  text-decoration: none;
-  color: #2c2c2c;
-  font-size: 20px;
-}
-nav ul li a.white {
-  color: #f6f6f6;
-  font-size: 20px;
-}
-nav ul li h5 {
-  margin: 0;
-}
-nav ul li:nth-of-type(3) {
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 main.home .about {
@@ -812,64 +893,8 @@ main.home .gallery ul {
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-  .blog .wrapper {
-    width: 90%;
-  }
-}
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-  main.blog .wrapper {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  main.blog .wrapper .additionalInfo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  main.blog .wrapper .additionalInfo .about {
-    margin-right: 10px;
-  }
-  main.blog .wrapper .additionalInfo .additionalInfo {
-    margin-left: 10px;
-  }
-}
-@media (max-width: 624px) {
-  .blog .additionalInfo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .blog .additionalInfo .about {
-    margin: 0;
-  }
-  .blog .additionalInfo .about img {
-    display: none;
-  }
-  .blog .additionalInfo .recentPosts {
-    margin: 0;
-  }
-}
-/* Landscape phones and down */
-/* Portrait tablet and small desktops */
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-  .contact .wrapper {
-    width: 95%;
-  }
-}
-@media (max-width: 560px) {
-  header.contact li {
-    padding: 20px 10px;
-  }
-}
-/* Landscape phones and down */
 @media (max-width: 480px) {
   html {
-    font-size: 95%;
+    font-size: 90%;
   }
 }

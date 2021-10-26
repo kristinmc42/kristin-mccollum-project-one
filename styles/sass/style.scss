@@ -13,6 +13,7 @@
 @import "textStyling";
 @import "forms";
 @import "footer";
+@import "headerNav";
 @import "blog";
 @import "contact";
 
@@ -40,25 +41,25 @@
 
 // general styles
 // wrapper
- .wrapper {
-    max-width: 1280px;
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-  }
+.wrapper {
+  max-width: 1280px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
 
-// images
+//image styles
 img {
   max-width: 100%;
   display: block;
 }
-
 
 // header styles
 header {
   background-color: $orangeyYellow;
 }
 
+// home page styles
 // home page header
 header.home {
   h1 {
@@ -87,77 +88,7 @@ header.home {
   }
 }
 
-//blog page header
-header.blog {
-  .background {
-    background-image: url(../assets/blog-image-1.jpg);
-    background-size: cover;
-    background-position: 100% 0;
-    height: 43vh;
-  }
-
-  h1 {
-    padding-top: 360px;
-    margin: 0;
-    font-size: 5.5rem;
-  }
-}
-
-//contact page header
-header.contact {
-  .background {
-    background-image: url(../assets/contact-image-1.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 43vh;
-  }
-  h1 {
-    padding-top: 360px;
-    padding-left: 20px;
-    margin: 0;
-    font-size: 5.5rem;
-  }
-}
-
-// nav styles
-nav {
-  justify-content: center;
-  padding-top: 10px;
-  ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    li {
-      text-transform: uppercase;
-      line-height: toRem(29);
-      padding: 20px;
-      a {
-        letter-spacing: toRem(1);
-        text-decoration: none;
-        color: $black;
-        font-size: 20px;
-      }
-      a.white {
-        color: $whiteText;
-        font-size: 20px;
-      }
-      h5 {
-        margin: 0;
-      }
-      &:nth-of-type(3){
-        padding-top: 0;
-        padding-bottom: 0;
-      }
-    }
-    
-  }
-}
-
-// main styles
-//home page
+//home page main styles
 main.home {
   // about section
   .about {
@@ -319,107 +250,38 @@ main.home {
 
 
 //media queries
-// home page
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+  //home page
+
+  
+    
 }
+
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-}
-/* Landscape phones and down */
-@media (max-width: 480px) {
+  //home page
+
+  
+  
+  
 }
 
-
-//blog page
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-  .blog .wrapper {
-    width: 90%;
-  }
-}
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-  main.blog {
-    .wrapper {
-      flex-wrap: wrap;
-      .additionalInfo {
-        display: flex;
-        .about {
-          margin-right: 10px;
-        }
-        .additionalInfo {
-          margin-left: 10px;
-        }
-      }
-    }
-    // h4 {
-    //   font-style: 1.1rem;
-    // }
-  }
-}
-
-// collapse asides
 @media (max-width: 624px){
-  .blog {
-    .additionalInfo {
-      display: flex;
-      flex-wrap: wrap;
-      .about {
-        // HELP: this is not working
-        margin: 0;
-        img {
-          display: none;
-        }
-      }
-      .recentPosts {
-        // HELP - this is not working
-        margin: 0;
-      }
-      
-    }
-  }
-}
-
-/* Landscape phones and down */
-@media (max-width: 480px) {
+  //home page
+  
+ 
   
 }
 
 
-//contact page
-
-/* Portrait tablet and small desktops */
-@media (max-width: 940px) {
-}
-
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
- 
-  .contact {
-    .wrapper {
-      width: 95%;
-    }
-  }
-}
-// condense header
-@media (max-width: 560px){
-  header.contact {
-    li {
-      padding: 20px 10px;
-    }
-  }
-}
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  // HELP: why isn't this working???
-  html {
-    font-size: 95%;
-  }
-  // header.contact {
-  //   h1 {
-  //     font-size: 2.2rem;
-  //     }  
-  //   }
+  
+    html {
+      font-size: 90%;
+    }
+  
   }

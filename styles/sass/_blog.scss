@@ -1,16 +1,34 @@
 //blog page
+
+//blog header styles
+header.blog {
+  .background {
+    background-image: url(../assets/blog-image-1.jpg);
+    background-size: cover;
+    background-position: 100% 0;
+    height: 43vh;
+  }
+
+  h1 {
+    padding-top: 360px;
+    margin: 0;
+    font-size: 5.5rem;
+  }
+}
+
+// blog main styles
 main.blog {
   background-color: $whiteShade;
   padding-bottom: 50px;
-  div.wrapper {
+  .wrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 100px;
-    div.additionalInfo {
+    .additionalInfo {
       flex: 1 1 400px;
       margin: 0 40px 0 10px;
-      aside.about,
-      aside.recentPosts  {
+      .about,
+      .recentPosts  {
         flex: 1 1 50%;
         background-color: white;
         padding: 30px;
@@ -23,7 +41,7 @@ main.blog {
             color: $darkGreyBlue;
           }
         }
-      aside.recentPosts {
+      .recentPosts {
         ul {
           list-style: none;
           padding-left: 30px;
@@ -43,7 +61,7 @@ main.blog {
         }
       }
     }
-    div.blogPosts {
+    .blogPosts {
       flex: 1 1 70%;
       article {
         background-color: white;
@@ -84,6 +102,52 @@ main.blog {
               margin: 0;
             }
         }
+      }
+    }
+  }
+}
+
+//blog media queries
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .blog .wrapper {
+    width: 90%;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  main.blog .wrapper{
+      flex-wrap: wrap;
+      .additionalInfo {
+        display: flex;
+        margin-left: 10px;
+        .about {
+          margin-right: 10px;
+        }
+    }
+    // h4 {
+    //   font-style: 1.1rem;
+    // }
+  }
+}
+
+@media (max-width: 624px){
+// collapse asides
+  main.blog .wrapper{
+    .additionalInfo {
+      display: flex;
+      flex-wrap: wrap;
+      .about {
+        // HELP: this is not working
+        margin: 0;
+        img {
+          display: none;
+        }
+      }
+      .recentPosts {
+        // HELP - this is not working
+        margin: 0;
       }
     }
   }

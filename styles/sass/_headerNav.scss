@@ -1,0 +1,60 @@
+// header nav styles
+nav {
+  justify-content: center;
+  padding-top: 10px;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    li {
+      text-transform: uppercase;
+      line-height: toRem(29);
+      padding: 20px;
+      a {
+        letter-spacing: toRem(1);
+        text-decoration: none;
+        color: $black;
+        font-size: 20px;
+      }
+      a.white {
+        color: $whiteText;
+        font-size: 20px;
+      }
+      h5 {
+        margin: 0;
+      }
+      &:nth-of-type(3){
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+    }
+    
+  }
+}
+
+
+//media queries
+@media (max-width: 940px) {
+
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header>nav ul li {
+      padding: 20px 10px;
+    }
+}
+// switch to hamburger menu header
+@media (max-width: 615px){
+ header>nav ul li :not(li>h5){
+   opacity: 0;
+ }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+
+}
