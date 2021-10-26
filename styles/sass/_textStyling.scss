@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, button {
 
 h1 {
   font-family: $loraFont;
-  font-size: toRem(80);
+  font-size: toRem(150);
   line-height: toRem(92);
   letter-spacing: toRem(0);
 }
@@ -32,11 +32,12 @@ h3 {
   font-size: toRem(32);
 }
 
-h4, h5 {
+h4 {
   font-size: toRem(24);
 }
 
 h5 {
+  font-size: toRem(45);
   font-family: $loraFont;
 }
 
@@ -44,5 +45,7 @@ p {
   font-size: toRem(20);
   letter-spacing: toRem(0);
 }
-
+a, button {
+  font-size: toRem(20);
+}
 

@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, button {
 
 h1 {
   font-family: "Lora", serif;
-  font-size: 5rem;
+  font-size: 9.375rem;
   line-height: 5.75rem;
   letter-spacing: 0rem;
 }
@@ -261,17 +261,22 @@ h3 {
   font-size: 2rem;
 }
 
-h4, h5 {
+h4 {
   font-size: 1.5rem;
 }
 
 h5 {
+  font-size: 2.8125rem;
   font-family: "Lora", serif;
 }
 
 p {
   font-size: 1.25rem;
   letter-spacing: 0rem;
+}
+
+a, button {
+  font-size: 1.25rem;
 }
 
 ::-webkit-input-placeholder {
@@ -506,7 +511,6 @@ header {
 
 header.home h1 {
   position: relative;
-  font-size: 8rem;
   padding: 5rem;
 }
 header.home .wrapper {
@@ -540,7 +544,6 @@ header.blog .background {
 header.blog h1 {
   padding-top: 335px;
   margin: 0;
-  font-size: 3.5rem;
 }
 
 header.contact .background {
@@ -553,7 +556,6 @@ header.contact h1 {
   padding-top: 330px;
   padding-left: 20px;
   margin: 0;
-  font-size: 3.5rem;
 }
 
 nav {
@@ -584,9 +586,11 @@ nav ul li a {
   letter-spacing: 0.0625rem;
   text-decoration: none;
   color: #2c2c2c;
+  font-size: 20px;
 }
 nav ul li a.white {
   color: #f6f6f6;
+  font-size: 20px;
 }
 nav ul li h5 {
   margin: 0;
@@ -607,16 +611,16 @@ main.home .about .wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 100px 100px 100px 0;
+  padding: 120px 100px 140px 0;
 }
 main.home .about .wrapper button {
   margin: 0;
-  padding: 12px 20px;
+  padding: 13px 25px;
   background-color: #05afc1;
   border: none;
+  letter-spacing: 0.0625rem;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  padding: 12px 20px;
 }
 main.home .favourite {
   display: -webkit-box;
@@ -646,9 +650,10 @@ main.home .favourite .favouriteText {
 }
 main.home .favourite .favouriteText button {
   margin: 0;
-  padding: 12px 20px;
+  padding: 13px 25px;
   background-color: #05afc1;
   border: none;
+  letter-spacing: 0.0625rem;
 }
 main.home .travels {
   display: -webkit-box;
@@ -673,9 +678,10 @@ main.home .travels .travelsText {
 }
 main.home .travels .travelsText button {
   margin: 0;
-  padding: 12px 20px;
+  padding: 13px 25px;
   background-color: #05afc1;
   border: none;
+  letter-spacing: 0.0625rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -761,9 +767,10 @@ main.home .journey .journeyText {
 }
 main.home .journey .journeyText button {
   margin: 0;
-  padding: 12px 20px;
+  padding: 13px 25px;
   background-color: #05afc1;
   border: none;
+  letter-spacing: 0.0625rem;
 }
 main.home .gallery ul {
   list-style: none;
