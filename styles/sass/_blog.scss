@@ -5,10 +5,10 @@ main.blog {
   div.wrapper {
     display: flex;
     justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 100px;
     div.additionalInfo {
-      flex: 1 1 350px;
-      margin: 0 10px;
+      flex: 1 1 400px;
+      margin: 0 40px 0 10px;
       aside.about,
       aside.recentPosts  {
         flex: 1 1 50%;
@@ -44,7 +44,7 @@ main.blog {
       }
     }
     div.blogPosts {
-      flex: 1 1 65%;
+      flex: 1 1 70%;
       article {
         background-color: white;
         padding: 40px 40px 30px 40px;
@@ -68,7 +68,7 @@ main.blog {
           }
           &:first-of-type,
           &:last-of-type {
-            border-bottom: 4px solid $orangeyYellow;
+            border-bottom: 6px solid $orangeyYellow;
           }
           &:first-of-type {
             > p:nth-child(8){
@@ -76,7 +76,7 @@ main.blog {
             }
           }
           &:nth-of-type(2){
-            margin: 20px 4px;
+            margin: 30px 4px 20px 4px;
           }
           &:not(:first-of-type){
             display: flex;

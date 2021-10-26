@@ -305,16 +305,17 @@ form {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #f0efed;
+  margin-bottom: 45px;
 }
 form input[type=text],
 form input[type=email] {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 210px;
           flex: 1 1 210px;
-  height: 65px;
+  height: 80px;
   padding-left: 20px;
   border: none;
-  margin: 8px 4px;
+  margin: 8px 6px;
 }
 form textarea {
   -webkit-box-flex: 1;
@@ -323,14 +324,14 @@ form textarea {
   resize: none;
   padding: 20px 0 0 20px;
   border: none;
-  margin: 10px 4px;
+  margin: 10px 6px 15px 6px;
 }
 form button {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
   background-color: #05afc1;
-  padding: 10px;
+  padding: 12px;
   margin: 0 4px;
 }
 
@@ -355,13 +356,13 @@ main.blog div.wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 60px;
+  padding-top: 100px;
 }
 main.blog div.wrapper div.additionalInfo {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 350px;
-          flex: 1 1 350px;
-  margin: 0 10px;
+      -ms-flex: 1 1 400px;
+          flex: 1 1 400px;
+  margin: 0 40px 0 10px;
 }
 main.blog div.wrapper div.additionalInfo aside.about,
 main.blog div.wrapper div.additionalInfo aside.recentPosts {
@@ -398,8 +399,8 @@ main.blog div.wrapper div.additionalInfo aside.recentPosts li::before {
 }
 main.blog div.wrapper div.blogPosts {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 65%;
-          flex: 1 1 65%;
+      -ms-flex: 1 1 70%;
+          flex: 1 1 70%;
 }
 main.blog div.wrapper div.blogPosts article {
   background-color: white;
@@ -424,13 +425,13 @@ main.blog div.wrapper div.blogPosts article a {
   font-style: italic;
 }
 main.blog div.wrapper div.blogPosts article:first-of-type, main.blog div.wrapper div.blogPosts article:last-of-type {
-  border-bottom: 4px solid #f6a823;
+  border-bottom: 6px solid #f6a823;
 }
 main.blog div.wrapper div.blogPosts article:first-of-type > p:nth-child(8) {
   margin-bottom: 0;
 }
 main.blog div.wrapper div.blogPosts article:nth-of-type(2) {
-  margin: 20px 4px;
+  margin: 30px 4px 20px 4px;
 }
 main.blog div.wrapper div.blogPosts article:not(:first-of-type) {
   display: -webkit-box;
@@ -501,10 +502,6 @@ img {
   display: block;
 }
 
-button {
-  border: none;
-}
-
 header {
   background-color: #f6a823;
 }
@@ -539,11 +536,12 @@ header.blog .background {
   background-image: url(../assets/blog-image-1.jpg);
   background-size: cover;
   background-position: 100% 0;
-  height: 40vh;
+  height: 43vh;
 }
 header.blog h1 {
-  padding-top: 335px;
+  padding-top: 360px;
   margin: 0;
+  font-size: 5.5rem;
 }
 
 header.contact .background {
@@ -562,6 +560,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 10px;
 }
 nav ul {
   list-style: none;

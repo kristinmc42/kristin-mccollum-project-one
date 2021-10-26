@@ -50,11 +50,6 @@ img {
   display: block;
 }
 
-button {
-  border: none;
-}
-
-
 
 // header styles
 header {
@@ -95,12 +90,13 @@ header.blog {
     background-image: url(../assets/blog-image-1.jpg);
     background-size: cover;
     background-position: 100% 0;
-    height: 40vh;
+    height: 43vh;
   }
 
   h1 {
-    padding-top: 335px;
+    padding-top: 360px;
     margin: 0;
+    font-size: 5.5rem;
   }
 }
 
@@ -122,6 +118,7 @@ header.contact {
 // nav styles
 nav {
   justify-content: center;
+  padding-top: 10px;
   ul {
     list-style: none;
     display: flex;
