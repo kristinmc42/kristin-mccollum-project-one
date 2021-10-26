@@ -509,10 +509,21 @@ main.blog .wrapper .blogPosts article:not(:first-of-type) p {
   margin: 0;
 }
 
+@media (max-width: 1190px) {
+  main.blog .wrapper {
+    width: 85%;
+  }
+}
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-  .blog .wrapper {
+  main.blog .wrapper {
     width: 90%;
+  }
+  main.blog .wrapper .additionalInfo {
+    margin: 0 20px 0 10px;
+  }
+  main.blog .wrapper .blogPosts article h3 {
+    font-size: 1.9rem;
   }
 }
 /* Landscape phone to portrait tablet */
@@ -525,10 +536,26 @@ main.blog .wrapper .blogPosts article:not(:first-of-type) p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-left: 10px;
+    margin-left: 0;
+    margin-right: 0;
   }
   main.blog .wrapper .additionalInfo .about {
     margin-right: 10px;
+  }
+  main.blog .wrapper .additionalInfo .about p, main.blog .wrapper .additionalInfo .about p > a {
+    font-size: 1.1rem;
+  }
+  main.blog .wrapper .additionalInfo .recentPosts {
+    margin-right: 0;
+  }
+  main.blog .wrapper .additionalInfo .recentPosts ul li a {
+    font-size: 1.1rem;
+  }
+  main.blog .wrapper .blogPosts article h3 {
+    font-size: 1.8rem;
+  }
+  main.blog .wrapper .blogPosts article p {
+    font-size: 1.1rem;
   }
 }
 @media (max-width: 624px) {
@@ -645,6 +672,10 @@ main.contact .wrapper form textarea {
     font-size: 2.5rem;
   }
 }
+body {
+  overflow-x: hidden;
+}
+
 .wrapper {
   max-width: 1280px;
   width: 80%;

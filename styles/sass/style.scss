@@ -40,6 +40,11 @@
 }
 
 // general styles
+// body
+// got this suggestion from stackoverflow to get rid of horizontal scroll when I couldn't figure out what was causing it; not sure if it's best practice
+body{
+    overflow-x:hidden;
+}
 // wrapper
 .wrapper {
   max-width: 1280px;
