@@ -203,7 +203,7 @@ main.home {
       display: flex;
       flex-direction: column;
       flex: 1 1 50%;
-      padding: 80px 80px 80px 100px;
+      padding: 20px 100px 140px 100px;
       text-align: right;
       padding-top: 0px;
       button {
@@ -215,11 +215,11 @@ main.home {
       flex: 2 1 50%;
       background-color:$orangeyYellow;
       position: relative;
-      margin-top: 20px;
-      height: 350px;
+      margin-top: 40px;
+      height: 400px;
       img {
         position: absolute;
-        max-width: 555px;
+        max-width: 650px;
         top: -20px;
         left: -20px;
       }
@@ -248,6 +248,10 @@ main.home {
         .about, .contact{
           padding-left: 20px;
         }
+
+      .photos, .blog {
+        padding-right: 50px;
+      }
         .grid {
           h3 {
             padding-top: 10px;
@@ -267,7 +271,8 @@ main.home {
   // journey section
   .journey {
     background-color: $whiteShade;
-    padding-top: 80px;
+    padding-top: 100px;
+    padding-bottom: 30px;
     .journeyImage {
     flex: 2 1 30%;
     position: relative;
@@ -285,6 +290,9 @@ main.home {
     flex: 1 1 65%;
     padding: 100px 50px;
     padding: 0 0 80px 100px;
+    p {
+      padding: 15px 0
+    }
       button {
         @include buttonFormat;
       }

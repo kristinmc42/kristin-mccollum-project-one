@@ -672,7 +672,7 @@ main.home .travels .travelsText {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
-  padding: 80px 80px 80px 100px;
+  padding: 20px 100px 140px 100px;
   text-align: right;
   padding-top: 0px;
 }
@@ -691,12 +691,12 @@ main.home .travels .travelsImage {
           flex: 2 1 50%;
   background-color: #f6a823;
   position: relative;
-  margin-top: 20px;
-  height: 350px;
+  margin-top: 40px;
+  height: 400px;
 }
 main.home .travels .travelsImage img {
   position: absolute;
-  max-width: 555px;
+  max-width: 650px;
   top: -20px;
   left: -20px;
 }
@@ -729,6 +729,9 @@ main.home .detailedLinks .wrapper i {
 main.home .detailedLinks .wrapper .about, main.home .detailedLinks .wrapper .contact {
   padding-left: 20px;
 }
+main.home .detailedLinks .wrapper .photos, main.home .detailedLinks .wrapper .blog {
+  padding-right: 50px;
+}
 main.home .detailedLinks .wrapper .grid h3 {
   padding-top: 10px;
 }
@@ -741,7 +744,8 @@ main.home figure img {
 }
 main.home .journey {
   background-color: #f0efed;
-  padding-top: 80px;
+  padding-top: 100px;
+  padding-bottom: 30px;
 }
 main.home .journey .journeyImage {
   -webkit-box-flex: 2;
@@ -764,6 +768,9 @@ main.home .journey .journeyText {
           flex: 1 1 65%;
   padding: 100px 50px;
   padding: 0 0 80px 100px;
+}
+main.home .journey .journeyText p {
+  padding: 15px 0;
 }
 main.home .journey .journeyText button {
   margin: 0;
