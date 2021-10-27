@@ -80,6 +80,7 @@ header.home {
 
   .title {
     flex: 1 1 50%;
+    position: relative;
     h1 {
       position: relative;
       padding: 5rem;
@@ -96,7 +97,6 @@ header.home {
     margin-bottom: toRem(-50);
     flex: 1 1 50%;
   }
-  
 }
 
 //home page main styles
@@ -264,12 +264,16 @@ main.home {
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   //home page
+  // reduce size of header and text image 
   header.home .wrapper {
     display: flex;
     width: 90%;
     .title, .headerImage {
       flex: 1 1 50%;
-      h1 {font-size: 5rem;}
+      h1 {
+        font-size: 5rem;
+        padding-right: 3rem;
+      }
     }
   }
   main.home {
@@ -312,7 +316,10 @@ main.home {
       font-size: 4rem;
       padding-top: 2rem;
     }
-    .text {width: 20%;}
+    .text {
+      width: 33%;
+      left: 20px;
+    }
   }
   main.home {
     .about .wrapper{padding-right: 0;}
@@ -350,6 +357,18 @@ main.home {
 
 @media (max-width: 624px){
   //home page
+  header.home .wrapper {
+    .title {
+      margin-left: 30px;
+      h1 {
+        padding-left: 5rem;
+        padding-right: 0;
+      }
+    }
+    .headerImage {
+      display: none;
+    }
+  }
   
  
   
@@ -359,7 +378,6 @@ main.home {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  
     html {
       font-size: 90%;
     }

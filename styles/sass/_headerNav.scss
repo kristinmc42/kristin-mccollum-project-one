@@ -49,9 +49,13 @@ nav {
     }
 }
 // switch to hamburger menu header
-@media (max-width: 615px){
- header>nav ul li :not(li>h5){
-   opacity: 0;
+@media (max-width: 624px){
+ header>nav ul {
+   position: relative;
+   li :not(li>h5){
+     opacity: 0;
+     position: absolute;
+   }
  }
 }
 /* Landscape phones and down */

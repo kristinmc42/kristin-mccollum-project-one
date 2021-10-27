@@ -18,8 +18,9 @@ h1, h2, h3, h4, h5, button {
 }
 
 h1 {
+  // I increased the font size of the h1 so it matched the design laout better
   font-family: $loraFont;
-  font-size: toRem(150);
+  font-size: toRem(110);
   line-height: toRem(92);
   letter-spacing: toRem(0);
 }
