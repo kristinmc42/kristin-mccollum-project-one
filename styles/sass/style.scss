@@ -276,6 +276,9 @@ main.home {
     h2 {font-size: 2.2rem;}
     h3 {font-size: 1.7rem;}
     p {font-size: 1.2rem;}
+    .about .wrapper {
+      padding-right: 55px;
+    }
     .favourite .favouriteText {
       padding: 60px 50px 0 50px;
     }
@@ -304,10 +307,45 @@ main.home {
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   //home page
-
-  
-  
-  
+  header.home .wrapper .title{
+    h1{
+      font-size: 4rem;
+      padding-top: 2rem;
+    }
+    .text {width: 20%;}
+  }
+  main.home {
+    .about .wrapper{padding-right: 0;}
+    .favourite{
+      flex-direction: column;
+      .favouriteImage img {
+        position: relative;
+      }
+    }
+    .travels {
+      flex-direction: column-reverse;
+      .travelsImage img {
+        position: relative;
+      }
+      .travelsText {
+        padding-top: 50px;
+        padding-bottom: 100px;
+      }
+    }
+    .detailedLinks {
+      padding-top: 0;
+    }
+    .journey {
+      padding-top: 55px;
+        .journeyText {
+          padding-left: 0;
+          padding-bottom: 30px;
+        }
+        .journeyImage {
+          display: none;
+        }
+      }
+  }
 }
 
 @media (max-width: 624px){
