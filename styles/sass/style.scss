@@ -67,18 +67,26 @@ header {
 // home page styles
 // home page header
 header.home {
-  h1 {
-    position: relative;
-    padding: 5rem;
-  }
-
+  
   .wrapper {
     justify-content: space-evenly;
     align-items: center;
+    display: flex;
   }
-
+  
   div.wrapper:nth-child(2) {
     padding-top: 40px;
+  }
+
+  .title {
+    flex: 1 1 50%;
+    h1 {
+      position: relative;
+      padding: 5rem;
+    }
+    img.text {
+      position: absolute;
+    }
   }
 
   .headerImage {
@@ -86,11 +94,9 @@ header.home {
     max-width: 500px;
     box-shadow: 20px 20px white;
     margin-bottom: toRem(-50);
+    flex: 1 1 50%;
   }
   
-  img.text {
-    position: absolute;
-  }
 }
 
 //home page main styles
@@ -258,8 +264,39 @@ main.home {
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   //home page
-
-  
+  header.home .wrapper {
+    display: flex;
+    width: 90%;
+    .title, .headerImage {
+      flex: 1 1 50%;
+      h1 {font-size: 5rem;}
+    }
+  }
+  main.home {
+    h2 {font-size: 2.2rem;}
+    h3 {font-size: 1.7rem;}
+    p {font-size: 1.2rem;}
+    .favourite .favouriteText {
+      padding: 60px 50px 0 50px;
+    }
+    .travels {
+      .travelsText{
+        padding: 5px 65px 65px 45px;
+      }
+      .travelsImage {
+        margin-top: 30px;
+      }
+    }  
+    .journey {
+      .wrapper {
+        width: 85%;
+        .journeyText {
+          padding-bottom: 44px;
+          flex-basis: 70%;
+        }
+      }
+    }
+  }
     
 }
 
