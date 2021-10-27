@@ -115,6 +115,9 @@ main.blog {
 }
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+  header.blog .background {
+    background-position: 70% 0;
+  }
   main.blog .wrapper {
     width: 90%;
     .additionalInfo {
@@ -125,13 +128,19 @@ main.blog {
   }
    .blogPosts article{
       h3 {font-size: 1.9rem;}
-      
     }
 }
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  header.blog .background {
+    height: 38vh;
+    background-position: 70% 0;
+    h1 {
+      font-size: 5.4rem;
+    padding-top: 316px;}
+  }
   main.blog .wrapper{
       flex-wrap: wrap;
       .additionalInfo {
@@ -149,28 +158,52 @@ main.blog {
     }
     .blogPosts article{
       h3 {font-size: 1.8rem;}
-      p{font-size: 1.1rem;}
+      p, a{font-size: 1.1rem;}
+
     }
   }
 }
 
 @media (max-width: 624px){
+  header.blog .background {
+    height: 32vh;
+    
+    h1 {
+      font-size: 5.3rem;
+    padding-top: 260px;}
+  }
 // collapse asides
   main.blog .wrapper{
     .additionalInfo {
       display: flex;
       flex-wrap: wrap;
       .about {
-        // HELP: this is not working
-        margin: 0;
+       flex-basis: 100%;
+       margin-right: 0;
+        margin-bottom: 20px;
         img {
           display: none;
         }
       }
       .recentPosts {
-        // HELP - this is not working
         margin: 0;
       }
     }
+    .blogPosts{
+      margin-top: 20px;
+    }
   }
 }
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    header.blog.background {
+        background-position: 70% 0;
+    } 
+    main.blog .wrapper {
+      width: 100%;
+      .blogPosts :not(article:first-of-type) {
+        flex-wrap: wrap;
+        div:first-of-type {padding-left: 20px;}
+      }
+    }
+  }

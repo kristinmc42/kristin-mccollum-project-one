@@ -516,6 +516,10 @@ main.blog .wrapper .blogPosts article:not(:first-of-type) p {
 }
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+  header.blog .background {
+    background-position: 70% 0;
+  }
+
   main.blog .wrapper {
     width: 90%;
   }
@@ -528,6 +532,15 @@ main.blog .wrapper .blogPosts article:not(:first-of-type) p {
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  header.blog .background {
+    height: 38vh;
+    background-position: 70% 0;
+  }
+  header.blog .background h1 {
+    font-size: 5.4rem;
+    padding-top: 316px;
+  }
+
   main.blog .wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -554,11 +567,19 @@ main.blog .wrapper .blogPosts article:not(:first-of-type) p {
   main.blog .wrapper .blogPosts article h3 {
     font-size: 1.8rem;
   }
-  main.blog .wrapper .blogPosts article p {
+  main.blog .wrapper .blogPosts article p, main.blog .wrapper .blogPosts article a {
     font-size: 1.1rem;
   }
 }
 @media (max-width: 624px) {
+  header.blog .background {
+    height: 32vh;
+  }
+  header.blog .background h1 {
+    font-size: 5.3rem;
+    padding-top: 260px;
+  }
+
   main.blog .wrapper .additionalInfo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -567,13 +588,36 @@ main.blog .wrapper .blogPosts article:not(:first-of-type) p {
         flex-wrap: wrap;
   }
   main.blog .wrapper .additionalInfo .about {
-    margin: 0;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
   main.blog .wrapper .additionalInfo .about img {
     display: none;
   }
   main.blog .wrapper .additionalInfo .recentPosts {
     margin: 0;
+  }
+  main.blog .wrapper .blogPosts {
+    margin-top: 20px;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  header.blog.background {
+    background-position: 70% 0;
+  }
+
+  main.blog .wrapper {
+    width: 100%;
+  }
+  main.blog .wrapper .blogPosts :not(article:first-of-type) {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main.blog .wrapper .blogPosts :not(article:first-of-type) div:first-of-type {
+    padding-left: 20px;
   }
 }
 header.contact .background {
