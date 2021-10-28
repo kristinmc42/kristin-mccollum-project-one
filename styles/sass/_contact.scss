@@ -47,6 +47,10 @@ main.contact {
                 font-size: 2rem;
                 color: $orangeyYellow;
               }
+              a:hover, a:focus {
+                border-bottom: 4px solid $black;
+                // border-top: 4px solid $black;
+              }
           }
         }
         address {

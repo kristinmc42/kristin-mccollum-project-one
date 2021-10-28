@@ -333,6 +333,11 @@ form button {
   background-color: #05afc1;
   padding: 12px;
   margin: 0 4px;
+  border: none;
+}
+form button:hover, form button:focus {
+  background-color: rgba(5, 175, 193, 0.5);
+  font-weight: bold;
 }
 
 footer {
@@ -380,6 +385,9 @@ nav ul li a {
   text-decoration: none;
   color: #2c2c2c;
   font-size: 20px;
+}
+nav ul li a:hover, nav ul li a:focus {
+  border-bottom: 3px solid #f0efed;
 }
 nav ul li a.white {
   color: #f6f6f6;
@@ -436,6 +444,9 @@ main.blog .wrapper {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 100px;
+}
+main.blog .wrapper a:hover, main.blog .wrapper a:focus {
+  border-bottom: 2px solid #2c2c2c;
 }
 main.blog .wrapper .additionalInfo {
   -webkit-box-flex: 1;
@@ -502,6 +513,9 @@ main.blog .wrapper .blogPosts article a {
   text-decoration: none;
   color: #285e64;
   font-style: italic;
+}
+main.blog .wrapper .blogPosts article a:hover, main.blog .wrapper .blogPosts article a:focus {
+  border-bottom: 2px solid #2c2c2c;
 }
 main.blog .wrapper .blogPosts article:first-of-type, main.blog .wrapper .blogPosts article:last-of-type {
   border-bottom: 6px solid #f6a823;
@@ -680,6 +694,9 @@ main.contact .wrapper .contactText nav.icons ul a {
   font-size: 2rem;
   color: #f6a823;
 }
+main.contact .wrapper .contactText nav.icons ul a:hover, main.contact .wrapper .contactText nav.icons ul a:focus {
+  border-bottom: 4px solid #2c2c2c;
+}
 main.contact .wrapper .contactText address {
   font-style: normal;
   padding-left: 30px;
@@ -813,6 +830,10 @@ main.home .about .wrapper a.button {
   -ms-flex-item-align: start;
       align-self: flex-start;
 }
+main.home .about .wrapper a.button:hover,
+main.home .about .wrapper a.button:focus {
+  background-color: rgba(5, 175, 193, 0.5);
+}
 main.home .favourite {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -849,6 +870,10 @@ main.home .favourite .favouriteText a.button {
   letter-spacing: 0.0625rem;
   width: 170px;
 }
+main.home .favourite .favouriteText a.button:hover,
+main.home .favourite .favouriteText a.button:focus {
+  background-color: rgba(5, 175, 193, 0.5);
+}
 main.home .travels {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -881,6 +906,10 @@ main.home .travels .travelsText a.button {
   letter-spacing: 0.0625rem;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+main.home .travels .travelsText a.button:hover,
+main.home .travels .travelsText a.button:focus {
+  background-color: rgba(5, 175, 193, 0.5);
 }
 main.home .travels .travelsImage {
   -webkit-box-flex: 2;
@@ -977,6 +1006,10 @@ main.home .journey .journeyText a.button {
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 0.0625rem;
+}
+main.home .journey .journeyText a.button:hover,
+main.home .journey .journeyText a.button:focus {
+  background-color: rgba(5, 175, 193, 0.5);
 }
 main.home .gallery ul {
   list-style: none;
@@ -1084,6 +1117,14 @@ main.home .gallery ul {
   }
   main.home .detailedLinks .wrapper {
     grid-template-columns: 1fr;
+    gap: 20px;
+    padding-left: 35px;
+  }
+  main.home .detailedLinks .wrapper .photos, main.home .detailedLinks .wrapper .blog {
+    padding: 0;
+  }
+  main.home .detailedLinks .wrapper .photos p, main.home .detailedLinks .wrapper .blog p {
+    padding-right: 0;
   }
   main.home .journey {
     padding-top: 55px;

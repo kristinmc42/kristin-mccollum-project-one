@@ -1,5 +1,4 @@
 //blog page
-
 //blog header styles
 header.blog {
   .background {
@@ -24,6 +23,9 @@ main.blog {
     display: flex;
     justify-content: space-between;
     padding-top: 100px;
+    a:hover, a:focus {
+          border-bottom: 2px solid $black;
+        }
     .additionalInfo {
       flex: 1 1 400px;
       margin: 0 40px 0 10px;
@@ -84,6 +86,9 @@ main.blog {
             color: $darkGreyBlue;
             font-style: italic;
           }
+        a:hover, a:focus {
+          border-bottom: 2px solid $black;
+        }
           &:first-of-type,
           &:last-of-type {
             border-bottom: 6px solid $orangeyYellow;

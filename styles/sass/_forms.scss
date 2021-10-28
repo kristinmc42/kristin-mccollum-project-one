@@ -41,6 +41,11 @@ form {
       background-color: $accent;
       padding: 12px;
       margin: 0 4px;
+      border: none;
+    }
+    button:hover, button:focus {
+      background-color: $accentOpaque;
+      font-weight: bold;
     }
 
 }

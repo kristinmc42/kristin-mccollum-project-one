@@ -30,6 +30,10 @@
   letter-spacing: toRem(1);
 }
 
+@mixin buttonAnchorsHover {
+  background-color: $accentOpaque;
+}
+
 @mixin roundIcons {
   background-color: $orangeyYellow;
   border-radius: 50%;
@@ -117,6 +121,8 @@ main.home {
         @include buttonAnchors;
         align-self: flex-start;
       }
+      a.button:hover,
+      a.button:focus {@include buttonAnchorsHover};
     }
   }
   // favourites section
@@ -142,6 +148,8 @@ main.home {
         @include buttonAnchors;
         width: 170px;
       }
+      a.button:hover,
+      a.button:focus {@include buttonAnchorsHover};
     }
   }
   // travels section
@@ -159,6 +167,8 @@ main.home {
         @include buttonAnchors;
         align-self: flex-end;
       }
+      a.button:hover,
+      a.button:focus {@include buttonAnchorsHover};
     }
     .travelsImage {
       flex: 2 1 50%;
@@ -245,6 +255,8 @@ main.home {
       a.button {
         @include buttonAnchors;
       }
+      a.button:hover,
+      a.button:focus {@include buttonAnchorsHover};
     }
   }
   // gallery section
@@ -269,18 +281,10 @@ main.home {
 @media (max-width: 1280){
   //reduce img text width and h1 font-size 
 
-.title > h1:nth-child(2) {
- font-size: 5.7rem;
-}
+  .title > h1:nth-child(2) {
+  font-size: 5.7rem;
+  }
 
-// header.home .title {
-//     .text {
-//       width: 42%;
-//     }
-//     h1 {
-//       font-size: 5.8rem;
-//     }
-// }
 }
 
 /* Portrait tablet and small desktops */
@@ -376,6 +380,14 @@ main.home {
       padding-left: 20px;
       .wrapper {
         grid-template-columns: 1fr;
+        gap: 20px;
+        padding-left: 35px;
+        .photos, .blog {
+          padding: 0;
+          p {
+            padding-right: 0;
+          }
+        }
       }
     }
     .journey {
