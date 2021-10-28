@@ -6,10 +6,12 @@ header.blog {
     background-size: cover;
     background-position: 100% 0;
     height: 43vh;
+    position: relative;
   }
 
   h1 {
-    padding-top: 360px;
+    position: absolute;
+    bottom: -51px;
     margin: 0;
     font-size: 5.5rem;
   }
@@ -142,9 +144,7 @@ main.blog {
   header.blog .background {
     height: 38vh;
     background-position: 70% 0;
-    h1 {
-      font-size: 5.4rem;
-    padding-top: 316px;}
+    h1 {font-size: 5.4rem;}
   }
   main.blog .wrapper{
       flex-wrap: wrap;
@@ -173,9 +173,7 @@ main.blog {
   header.blog .background {
     height: 32vh;
     
-    h1 {
-      font-size: 5.3rem;
-    padding-top: 260px;}
+    h1 {font-size: 5.3rem;}
   }
 // collapse asides
   main.blog .wrapper{

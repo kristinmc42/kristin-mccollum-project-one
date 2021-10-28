@@ -425,9 +425,11 @@ header.blog .background {
   background-size: cover;
   background-position: 100% 0;
   height: 43vh;
+  position: relative;
 }
 header.blog h1 {
-  padding-top: 360px;
+  position: absolute;
+  bottom: -51px;
   margin: 0;
   font-size: 5.5rem;
 }
@@ -564,7 +566,6 @@ main.blog .wrapper .blogPosts article:not(:first-of-type) p {
   }
   header.blog .background h1 {
     font-size: 5.4rem;
-    padding-top: 316px;
   }
 
   main.blog .wrapper {
@@ -603,7 +604,6 @@ main.blog .wrapper .blogPosts article:not(:first-of-type) p {
   }
   header.blog .background h1 {
     font-size: 5.3rem;
-    padding-top: 260px;
   }
 
   main.blog .wrapper .additionalInfo {
@@ -651,11 +651,12 @@ header.contact .background {
   background-size: cover;
   background-position: center;
   height: 43vh;
+  position: relative;
 }
 header.contact h1 {
-  padding-top: 360px;
-  padding-left: 20px;
-  margin: 0;
+  position: absolute;
+  bottom: -50px;
+  margin: 0 auto;
   font-size: 5.5rem;
 }
 

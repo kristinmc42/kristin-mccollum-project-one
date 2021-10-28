@@ -7,11 +7,12 @@ header.contact {
     background-size: cover;
     background-position: center;
     height: 43vh;
+    position: relative;
   }
   h1 {
-    padding-top: 360px;
-    padding-left: 20px;
-    margin: 0;
+    position: absolute;
+    bottom: -50px;
+    margin: 0 auto;
     font-size: 5.5rem;
   }
 }
@@ -49,7 +50,6 @@ main.contact {
               }
               a:hover, a:focus {
                 border-bottom: 4px solid $black;
-                // border-top: 4px solid $black;
               }
           }
         }
