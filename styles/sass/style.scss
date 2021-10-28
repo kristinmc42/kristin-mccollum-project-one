@@ -76,26 +76,31 @@ header.home {
   
   div.wrapper:nth-child(2) {
     padding-top: 40px;
+    justify-content: space-between;
+    width: 90%;
   }
 
+  
   .title {
-    flex: 1 1 50%;
+    // flex: 1 2 40%;
     position: relative;
     h1 {
       position: relative;
-      padding: 5rem;
+      padding-left: 5rem;
     }
     img.text {
+      top: -67px;
       position: absolute;
     }
   }
 
   .headerImage {
     width: 40%;
-    max-width: 500px;
-    box-shadow: 20px 20px white;
     margin-bottom: toRem(-50);
-    flex: 1 1 50%;
+    // flex: 2 1 60%;
+    img {
+      box-shadow: 20px 20px white;
+    }
   }
 }
 
@@ -261,6 +266,23 @@ main.home {
 
 
 //media queries
+@media (max-width: 1280){
+  //reduce img text width and h1 font-size 
+
+.title > h1:nth-child(2) {
+ font-size: 5.7rem;
+}
+
+// header.home .title {
+//     .text {
+//       width: 42%;
+//     }
+//     h1 {
+//       font-size: 5.8rem;
+//     }
+// }
+}
+
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   //home page
@@ -268,12 +290,16 @@ main.home {
   header.home .wrapper {
     display: flex;
     width: 90%;
-    .title, .headerImage {
-      flex: 1 1 50%;
+    .title {
       h1 {
         font-size: 5rem;
         padding-right: 3rem;
       }
+      .text {
+      width: 37%;
+      top: -45px;
+      }
+
     }
   }
   main.home {
@@ -318,7 +344,8 @@ main.home {
     }
     .text {
       width: 33%;
-      left: 20px;
+      top: 12px;
+      left: 25px;
     }
   }
   main.home {
@@ -357,21 +384,17 @@ main.home {
 
 @media (max-width: 624px){
   //home page
-  header.home .wrapper {
+  //change header img to be above title
+  header.home div.wrapper:nth-child(2) {
+    flex-direction: column-reverse;
     .title {
-      margin-left: 30px;
+      margin-top: 90px;
       h1 {
         padding-left: 5rem;
-        padding-right: 0;
+        padding-right: 20px;
       }
     }
-    .headerImage {
-      display: none;
-    }
   }
-  
- 
-  
 }
 
 
