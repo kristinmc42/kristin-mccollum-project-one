@@ -40,15 +40,16 @@
   font-size: 1.3rem;
   position: absolute;
   left: -70px;
+  top: 35px;
   padding: 15px;
 }
 
 // general styles
 // body
 // got this suggestion from stackoverflow to get rid of horizontal scroll when I couldn't figure out what was causing it; not sure if it's best practice
-body{
-    overflow-x:hidden;
-}
+// body{
+//     overflow-x:hidden;
+// }
 // wrapper
 .wrapper {
   max-width: 1280px;
@@ -59,7 +60,7 @@ body{
 
 //image styles
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 
@@ -95,6 +96,7 @@ header.home {
     img.text {
       top: -67px;
       position: absolute;
+      width: 40%;
     }
   }
 
@@ -116,7 +118,7 @@ main.home {
     .wrapper {
       display: flex;
       flex-direction: column;
-      padding: 120px 100px 140px 0;
+      padding: 9% 5% 140px 5%;
       a.button {
         @include buttonAnchors;
         align-self: flex-start;
@@ -133,20 +135,20 @@ main.home {
       background-color: $rustRed;
       position: relative;
       // height: 50%;
-      margin-top: -20px;
+      margin-bottom: 2%;
       img {
         max-width: 650px;
         position: absolute;
         right: 20px;
-        top: -20px;
+        bottom: 26px;
       }
       }
     .favouriteText {
       flex: 2 1 50%;
-      padding: 80px 100px 0 100px;
+      padding: 5%;
       a.button {
         @include buttonAnchors;
-        width: 170px;
+        width: 175px;
       }
       a.button:hover,
       a.button:focus {@include buttonAnchorsHover};
@@ -160,7 +162,7 @@ main.home {
       display: flex;
       flex-direction: column;
       flex: 1 1 50%;
-      padding: 20px 100px 140px 100px;
+      padding: 4% 7% 100px 5%;
       text-align: right;
       padding-top: 0px;
       a.button {
@@ -174,8 +176,8 @@ main.home {
       flex: 2 1 50%;
       background-color:$orangeyYellow;
       position: relative;
-      margin-top: 40px;
-      // height: 400px;
+      margin-top: 1%;
+      margin-bottom: -5%;
       img {
         position: absolute;
         max-width: 650px;
@@ -188,13 +190,15 @@ main.home {
   .detailedLinks {
     background-color: $whiteShade;
     margin-top: -50px;
-    padding-top: 50px;
+    padding-top: 100px;
     .wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       gap: 60px;
       padding: 80px 0 40px 40px;
+      .grid {
+        position: relative;
         a {
           text-decoration: none;
           position: relative;
@@ -204,9 +208,10 @@ main.home {
         i {
           @include roundIcons;
         }
-        .about, .contact{
-          padding-left: 20px;
-        }
+      }
+      .about, .contact{
+        padding-left: 20px;
+      }
 
       .photos, .blog {
         padding-right: 50px;
@@ -238,6 +243,7 @@ main.home {
     background: orange;
     height: 280px;
     max-width: 280px;
+    margin-top: 2%;
       img {
         position: absolute;
         max-width: 280px;
@@ -247,8 +253,7 @@ main.home {
     }
     .journeyText {
     flex: 1 1 65%;
-    padding: 100px 50px;
-    padding: 0 0 80px 100px;
+    padding: 0 0 7% 100px;
     p {
       padding: 15px 0
     }
@@ -278,13 +283,35 @@ main.home {
 
 
 //media queries
-@media (max-width: 1280){
-  //reduce img text width and h1 font-size 
-
-  .title > h1:nth-child(2) {
+//laptop
+@media (max-width: 1280px){
+  //reduce  h1 font-size 
+  header.home .wrapper .title h1{
   font-size: 5.7rem;
   }
-
+  main.home {
+    .favourite {
+      .favouriteImage {
+        margin-top: -1%;
+        margin-bottom: 3%;
+        img {
+          width: 85%;
+          bottom: 35px;
+        }
+      }
+      .favouriteText {
+        padding: 5% 5% 5% 6%;
+      }
+    }
+    .travels {
+      .travelsImage {
+        margin-bottom: 0%;
+        img {
+          width: 85%;
+        }
+      }
+    }
+  }
 }
 
 /* Portrait tablet and small desktops */
@@ -307,23 +334,44 @@ main.home {
     }
   }
   main.home {
-    h2 {font-size: 2.2rem;}
-    h3 {font-size: 1.7rem;}
-    p {font-size: 1.2rem;}
+    // reduce text size
+    h2 {font-size: 2.1rem;}
+    h3 {font-size: 1.6rem;}
+    p {font-size: 1.1rem;}
+    // adjust padding of sections
     .about .wrapper {
-      padding-right: 55px;
+      padding: 12% 5% 130px 5%;
     }
-    .favourite .favouriteText {
-      padding: 60px 50px 0 50px;
+    // change flex direction to make containers stack on top of each other
+    .favourite {
+      flex-direction: column;
+      .favouriteText {
+        padding: 60px 50px 0 50px;
+      } 
+      .favouriteImage img {
+        position: relative;
+        right: -265px;
+      }
     }
     .travels {
+      flex-direction: column-reverse;
       .travelsText{
-        padding: 5px 65px 65px 45px;
+        padding: 60px 65px 70px 45px;
       }
       .travelsImage {
         margin-top: 30px;
+        img {
+          position: relative;
+          left: 24px;
+        }
       }
     }  
+    // clear padding and margin for section
+    .detailedLinks {
+      margin-top: 0;
+      padding-top: 0;
+    }
+    // adjust spacing of section
     .journey {
       .wrapper {
         width: 85%;
@@ -331,10 +379,13 @@ main.home {
           padding-bottom: 44px;
           flex-basis: 70%;
         }
+        // reduce height of image container 
+        .journeyImage {
+          height: 245px;
+        }
       }
     }
-  }
-    
+  }   
 }
 
 
