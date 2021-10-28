@@ -351,6 +351,11 @@ nav {
           justify-content: center;
   padding-top: 10px;
 }
+nav .hamburger {
+  opacity: 0;
+  position: absolute;
+  left: -100px;
+}
 nav ul {
   list-style: none;
   display: -webkit-box;
@@ -395,12 +400,15 @@ nav ul li:nth-of-type(3) {
   }
 }
 @media (max-width: 624px) {
-  header > nav ul {
-    position: relative;
+  nav.wrapper .hamburger {
+    opacity: 1;
+    left: 20px;
   }
+
   header > nav ul li :not(li > h5) {
     opacity: 0;
     position: absolute;
+    left: -100px;
   }
 }
 /* Landscape phones and down */
@@ -816,7 +824,6 @@ main.home .favourite .favouriteImage {
           flex: 1 1 50%;
   background-color: #a82706;
   position: relative;
-  height: 400px;
   margin-top: -20px;
 }
 main.home .favourite .favouriteImage img {
@@ -882,7 +889,6 @@ main.home .travels .travelsImage {
   background-color: #f6a823;
   position: relative;
   margin-top: 40px;
-  height: 400px;
 }
 main.home .travels .travelsImage img {
   position: absolute;
@@ -1056,6 +1062,7 @@ main.home .gallery ul {
   }
   main.home .favourite .favouriteImage img {
     position: relative;
+    width: 90%;
   }
   main.home .travels {
     -webkit-box-orient: vertical;
@@ -1065,6 +1072,7 @@ main.home .gallery ul {
   }
   main.home .travels .travelsImage img {
     position: relative;
+    width: 90%;
   }
   main.home .travels .travelsText {
     padding-top: 50px;
@@ -1072,6 +1080,10 @@ main.home .gallery ul {
   }
   main.home .detailedLinks {
     padding-top: 0;
+    padding-left: 20px;
+  }
+  main.home .detailedLinks .wrapper {
+    grid-template-columns: 1fr;
   }
   main.home .journey {
     padding-top: 55px;
@@ -1097,6 +1109,11 @@ main.home .gallery ul {
   header.home div.wrapper:nth-child(2) .title h1 {
     padding-left: 5rem;
     padding-right: 20px;
+  }
+
+  main.home .gallery > ul:nth-child(1) {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
   }
 }
 /* Landscape phones and down */

@@ -2,6 +2,11 @@
 nav {
   justify-content: center;
   padding-top: 10px;
+  .hamburger {
+    opacity: 0;
+    position: absolute;
+    left: -100px;
+  }
   ul {
     list-style: none;
     display: flex;
@@ -50,13 +55,20 @@ nav {
 }
 // switch to hamburger menu header
 @media (max-width: 624px){
+  nav.wrapper {
+    .hamburger {
+      opacity: 1;
+      left: 20px;
+    }
+
+  }
  header>nav ul {
-   position: relative;
    li :not(li>h5){
      opacity: 0;
      position: absolute;
+     left: -100px;
    }
- }
+  }
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
