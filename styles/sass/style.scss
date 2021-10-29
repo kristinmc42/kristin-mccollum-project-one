@@ -7,6 +7,10 @@
     @return $remValue;
 }
 
+@mixin visitedLink {
+  color: $accent;
+}
+
 // sass partials 
 @import "setup";
 @import "colors";
@@ -43,6 +47,8 @@
   top: 35px;
   padding: 15px;
 }
+
+
 
 // general styles
 // body
@@ -290,6 +296,11 @@ main.home {
   font-size: 5.7rem;
   }
   main.home {
+    // reduce text size NEED TO MAKE SMALLER
+    h2 {font-size: 2.15rem;}
+    h3 {font-size: 1.65rem;}
+    p {font-size: 1.15rem;}
+    //reduce img size and margin
     .favourite {
       .favouriteImage {
         margin-top: -1%;
@@ -350,7 +361,8 @@ main.home {
       } 
       .favouriteImage img {
         position: relative;
-        right: -265px;
+        right: 0;
+        width: 75%;
       }
     }
     .travels {
@@ -362,7 +374,8 @@ main.home {
         margin-top: 30px;
         img {
           position: relative;
-          left: 24px;
+          left: 43px;
+          width: 75%;
         }
       }
     }  
@@ -374,14 +387,15 @@ main.home {
     // adjust spacing of section
     .journey {
       .wrapper {
-        width: 85%;
+        width: 90%;
         .journeyText {
           padding-bottom: 44px;
-          flex-basis: 70%;
+          padding-left: 5%;
+          flex-basis: 60%;
         }
-        // reduce height of image container 
+        // hide image container 
         .journeyImage {
-          height: 245px;
+         display: none;
         }
       }
     }
@@ -411,14 +425,14 @@ main.home {
       flex-direction: column;
       .favouriteImage img {
         position: relative;
-        width: 90%;
+        width: 75%;
       }
     }
     .travels {
       flex-direction: column-reverse;
       .travelsImage img {
         position: relative;
-        width: 90%;
+        width: 75%;
       }
       .travelsText {
         padding-top: 50px;
@@ -428,12 +442,12 @@ main.home {
     // change grid to column so all detailed links are above each other
     .detailedLinks {
       padding-top: 0;
-      padding-left: 20px;
+      // padding-left: 20px;
       .wrapper {
         grid-template-columns: 1fr;
         gap: 20px;
-        padding-left: 35px;
-        .photos, .blog {
+        // padding-left: 35px;
+        .grid {
           padding: 0;
           p {
             padding-right: 0;
@@ -484,4 +498,7 @@ main.home {
       font-size: 90%;
     }
   
+    main.home .detailedLinks {
+      padding-left: 12px;
+    }
   }

@@ -350,6 +350,18 @@ footer p {
   color: #f6f6f6;
 }
 
+.skipToContentLink {
+  left: 10%;
+  position: absolute;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.skipToContentLink:focus {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
 nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -474,11 +486,15 @@ main.blog .wrapper .additionalInfo .recentPosts a {
   text-decoration: none;
   color: #285e64;
 }
+main.blog .wrapper .additionalInfo .about a:visited,
+main.blog .wrapper .additionalInfo .recentPosts a:visited {
+  color: #05afc1;
+}
 main.blog .wrapper .additionalInfo .recentPosts ul {
   list-style: none;
   padding-left: 30px;
 }
-main.blog .wrapper .additionalInfo .recentPosts li a {
+main.blog .wrapper .additionalInfo .recentPosts li a, main.blog .wrapper .additionalInfo .recentPosts li a:link {
   color: #2c2c2c;
 }
 main.blog .wrapper .additionalInfo .recentPosts li::before {
@@ -1028,6 +1044,15 @@ main.home .gallery ul {
     font-size: 5.7rem;
   }
 
+  main.home h2 {
+    font-size: 2.15rem;
+  }
+  main.home h3 {
+    font-size: 1.65rem;
+  }
+  main.home p {
+    font-size: 1.15rem;
+  }
   main.home .favourite .favouriteImage {
     margin-top: -1%;
     margin-bottom: 3%;
@@ -1086,7 +1111,8 @@ main.home .gallery ul {
   }
   main.home .favourite .favouriteImage img {
     position: relative;
-    right: -265px;
+    right: 0;
+    width: 75%;
   }
   main.home .travels {
     -webkit-box-orient: vertical;
@@ -1102,22 +1128,24 @@ main.home .gallery ul {
   }
   main.home .travels .travelsImage img {
     position: relative;
-    left: 24px;
+    left: 43px;
+    width: 75%;
   }
   main.home .detailedLinks {
     margin-top: 0;
     padding-top: 0;
   }
   main.home .journey .wrapper {
-    width: 85%;
+    width: 90%;
   }
   main.home .journey .wrapper .journeyText {
     padding-bottom: 44px;
-    -ms-flex-preferred-size: 70%;
-        flex-basis: 70%;
+    padding-left: 5%;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
   }
   main.home .journey .wrapper .journeyImage {
-    height: 245px;
+    display: none;
   }
 }
 /* Landscape phone to portrait tablet */
@@ -1143,7 +1171,7 @@ main.home .gallery ul {
   }
   main.home .favourite .favouriteImage img {
     position: relative;
-    width: 90%;
+    width: 75%;
   }
   main.home .travels {
     -webkit-box-orient: vertical;
@@ -1153,7 +1181,7 @@ main.home .gallery ul {
   }
   main.home .travels .travelsImage img {
     position: relative;
-    width: 90%;
+    width: 75%;
   }
   main.home .travels .travelsText {
     padding-top: 50px;
@@ -1161,17 +1189,15 @@ main.home .gallery ul {
   }
   main.home .detailedLinks {
     padding-top: 0;
-    padding-left: 20px;
   }
   main.home .detailedLinks .wrapper {
     grid-template-columns: 1fr;
     gap: 20px;
-    padding-left: 35px;
   }
-  main.home .detailedLinks .wrapper .photos, main.home .detailedLinks .wrapper .blog {
+  main.home .detailedLinks .wrapper .grid {
     padding: 0;
   }
-  main.home .detailedLinks .wrapper .photos p, main.home .detailedLinks .wrapper .blog p {
+  main.home .detailedLinks .wrapper .grid p {
     padding-right: 0;
   }
   main.home .journey {
@@ -1209,5 +1235,9 @@ main.home .gallery ul {
 @media (max-width: 480px) {
   html {
     font-size: 90%;
+  }
+
+  main.home .detailedLinks {
+    padding-left: 12px;
   }
 }

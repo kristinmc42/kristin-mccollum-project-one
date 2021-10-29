@@ -1,4 +1,14 @@
+// skip link
+.skipToContentLink {
+  left: 10%;
+  position: absolute;
+  transform: translateY(-100%);
+}
+.skipToContentLink:focus {
+  transform: translateY(0%);
+}
 // header nav styles
+
 nav {
   justify-content: center;
   padding-top: 10px;
