@@ -99,11 +99,12 @@ nav.wrapper {
 }
 // switch to hamburger menu header
 @media (max-width: 624px){
- 
-.hamburger.menu {
-  opacity: 1;
-  left: 20px;
-}
+header{
+  .hamburger.menu {
+    opacity: 1;
+    left: 20px;
+  }
+} 
   
  header>nav.wrapper ul {
    li :not(li>h5){
