@@ -1,11 +1,5 @@
 //blog page
 
-
-@mixin visitedLink {
-  color: $accent;
-}
-
-
 //blog header styles
 header.blog {
   .background {
@@ -51,9 +45,6 @@ main.blog {
             text-decoration: none;
             color: $darkGreyBlue;
           }
-          a:visited {
-            @include visitedLink;
-          }
         }
       .recentPosts {
         ul {
@@ -61,7 +52,7 @@ main.blog {
           padding-left: 30px;
         }
         li {
-          a, a:link {
+          a {
             color: $black;
           }
         }

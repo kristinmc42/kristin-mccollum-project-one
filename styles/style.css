@@ -486,15 +486,11 @@ main.blog .wrapper .additionalInfo .recentPosts a {
   text-decoration: none;
   color: #285e64;
 }
-main.blog .wrapper .additionalInfo .about a:visited,
-main.blog .wrapper .additionalInfo .recentPosts a:visited {
-  color: #05afc1;
-}
 main.blog .wrapper .additionalInfo .recentPosts ul {
   list-style: none;
   padding-left: 30px;
 }
-main.blog .wrapper .additionalInfo .recentPosts li a, main.blog .wrapper .additionalInfo .recentPosts li a:link {
+main.blog .wrapper .additionalInfo .recentPosts li a {
   color: #2c2c2c;
 }
 main.blog .wrapper .additionalInfo .recentPosts li::before {
