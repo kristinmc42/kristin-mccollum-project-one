@@ -1208,18 +1208,21 @@ main.home .gallery ul {
   }
 }
 @media (max-width: 624px) {
-  header.home div.wrapper:nth-child(2) {
+  header.home .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  header.home div.wrapper:nth-child(2) .title {
+  header.home .wrapper .title {
     margin-top: 90px;
   }
-  header.home div.wrapper:nth-child(2) .title h1 {
+  header.home .wrapper .title h1 {
     padding-left: 5rem;
     padding-right: 20px;
+  }
+  header.home .wrapper .headerImage {
+    margin-top: 20px;
   }
 
   main.home .gallery > ul:nth-child(1) {

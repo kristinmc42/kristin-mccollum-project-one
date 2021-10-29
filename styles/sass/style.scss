@@ -7,9 +7,6 @@
     @return $remValue;
 }
 
-@mixin visitedLink {
-  color: $accent;
-}
 
 // sass partials 
 @import "setup";
@@ -472,7 +469,7 @@ main.home {
 @media (max-width: 624px){
   //home page
   //change header img to be above title
-  header.home div.wrapper:nth-child(2) {
+  header.home .wrapper {
     flex-direction: column-reverse;
     .title {
       margin-top: 90px;
@@ -480,6 +477,9 @@ main.home {
         padding-left: 5rem;
         padding-right: 20px;
       }
+    }
+    .headerImage {
+      margin-top: 20px;
     }
   }
   // change gallery grid to 1 column
