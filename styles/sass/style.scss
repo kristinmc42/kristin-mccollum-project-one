@@ -41,6 +41,7 @@
   font-size: 1.3rem;
   position: absolute;
   left: -70px;
+  // NOTE: this top value works for Firefox but needs to be 0 on CHrome. I'm not sure how to do both
   top: 35px;
   padding: 15px;
 }
@@ -48,11 +49,7 @@
 
 
 // general styles
-// body
-// got this suggestion from stackoverflow to get rid of horizontal scroll when I couldn't figure out what was causing it; not sure if it's best practice
-// body{
-//     overflow-x:hidden;
-// }
+
 // wrapper
 .wrapper {
   max-width: 1280px;
@@ -90,7 +87,6 @@ header.home {
 
   
   .title {
-    // flex: 1 2 40%;
     position: relative;
     h1 {
       position: relative;
@@ -106,7 +102,6 @@ header.home {
   .headerImage {
     width: 40%;
     margin-bottom: toRem(-50);
-    // flex: 2 1 60%;
     img {
       box-shadow: 20px 20px white;
     }
@@ -137,7 +132,6 @@ main.home {
       flex: 1 1 50%;
       background-color: $rustRed;
       position: relative;
-      // height: 50%;
       margin-bottom: 2%;
       img {
         max-width: 650px;
@@ -194,6 +188,7 @@ main.home {
     background-color: $whiteShade;
     margin-top: -50px;
     padding-top: 100px;
+    // container
     .wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -293,7 +288,7 @@ main.home {
   font-size: 5.7rem;
   }
   main.home {
-    // reduce text size NEED TO MAKE SMALLER
+    // reduce text size 
     h2 {font-size: 2.15rem;}
     h3 {font-size: 1.65rem;}
     p {font-size: 1.15rem;}
@@ -418,32 +413,13 @@ main.home {
   // change flex direction so images and text are in columns
   main.home {
     .about .wrapper{padding-right: 0;}
-    .favourite{
-      flex-direction: column;
-      .favouriteImage img {
-        position: relative;
-        width: 75%;
-      }
-    }
-    .travels {
-      flex-direction: column-reverse;
-      .travelsImage img {
-        position: relative;
-        width: 75%;
-      }
-      .travelsText {
-        padding-top: 50px;
-        padding-bottom: 100px;
-      }
-    }
+  
     // change grid to column so all detailed links are above each other
     .detailedLinks {
       padding-top: 0;
-      // padding-left: 20px;
       .wrapper {
         grid-template-columns: 1fr;
         gap: 20px;
-        // padding-left: 35px;
         .grid {
           padding: 0;
           p {

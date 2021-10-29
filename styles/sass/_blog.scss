@@ -29,6 +29,7 @@ main.blog {
     a:hover, a:focus {
           border-bottom: 2px solid $black;
         }
+        // container for about sophie aside and recent posts aside
     .additionalInfo {
       flex: 1 1 400px;
       margin: 0 40px 0 10px;
@@ -66,6 +67,7 @@ main.blog {
         }
       }
     }
+    // container for main blogposts
     .blogPosts {
       flex: 1 1 70%;
       article {
@@ -129,9 +131,6 @@ main.blog {
   main.blog .wrapper {
     width: 90%;
     .additionalInfo {
-    // -webkit-box-flex: 1;
-    // -ms-flex: 1 1 400px;
-    // flex: 1 1 400px;
     margin: 0 20px 0 10px;
   }
    .blogPosts article{
@@ -142,6 +141,7 @@ main.blog {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  //reduce height of header and text size to match smaller viewscreen
   header.blog .background {
     height: 38vh;
     background-position: 70% 0;

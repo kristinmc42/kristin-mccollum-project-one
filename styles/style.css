@@ -1159,30 +1159,6 @@ main.home .gallery ul {
   main.home .about .wrapper {
     padding-right: 0;
   }
-  main.home .favourite {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  main.home .favourite .favouriteImage img {
-    position: relative;
-    width: 75%;
-  }
-  main.home .travels {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  main.home .travels .travelsImage img {
-    position: relative;
-    width: 75%;
-  }
-  main.home .travels .travelsText {
-    padding-top: 50px;
-    padding-bottom: 100px;
-  }
   main.home .detailedLinks {
     padding-top: 0;
   }
