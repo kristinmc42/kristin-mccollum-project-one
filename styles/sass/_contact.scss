@@ -38,8 +38,11 @@ main.contact {
     
         nav.icons {
           ul {
+            list-style: none;
+            display: flex;
             justify-content: flex-start;
             margin-left: 0;
+            margin-top: -5px;
             padding-left: 15px;
             li {
               padding: 40px 15px 20px 15px;

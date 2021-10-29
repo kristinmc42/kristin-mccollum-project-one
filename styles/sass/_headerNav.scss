@@ -7,17 +7,48 @@
 .skipToContentLink:focus {
   transform: translateY(0%);
 }
-// header nav styles
+// hamburger menu
+.hamburger.menu {
+  opacity: 0;
+  position: absolute;
+  left: -100px;
+}
+nav.hamburger {
+  display: none;
+  background-color: $whiteShade;
+  position: absolute;
+  a {
+    text-decoration: none;
+    i {
+      font-size: 1rem;
+    }
+  }
+  ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    li{
+      text-transform: uppercase;
+      line-height: toRem(29);
+      padding: 20px;
+      a {
+        letter-spacing: toRem(1);
+        text-decoration: none;
+        color: $black;
+        font-size: 20px;
+      }
+      a:hover {
+        border-bottom: 3px solid $black;
+      }
+    }
+  }
+}
 
-nav {
+// header nav styles
+nav.wrapper {
   justify-content: center;
   padding-top: 10px;
-  .hamburger {
-    opacity: 0;
-    position: absolute;
-    left: -100px;
-  }
-  ul {
+  ul:not(.hamburger) {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -68,14 +99,13 @@ nav {
 }
 // switch to hamburger menu header
 @media (max-width: 624px){
-  nav.wrapper {
-    .hamburger {
-      opacity: 1;
-      left: 20px;
-    }
-
-  }
- header>nav ul {
+ 
+.hamburger.menu {
+  opacity: 1;
+  left: 20px;
+}
+  
+ header>nav.wrapper ul {
    li :not(li>h5){
      opacity: 0;
      position: absolute;
