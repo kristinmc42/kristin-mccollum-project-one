@@ -362,24 +362,12 @@ footer p {
           transform: translateY(0%);
 }
 
-.hamburger.menu {
-  opacity: 0;
-  position: absolute;
-  left: -100px;
-}
-
 nav.hamburger {
-  display: none;
   background-color: #f0efed;
   position: absolute;
 }
-nav.hamburger a {
-  text-decoration: none;
-}
-nav.hamburger a i {
-  font-size: 1rem;
-}
 nav.hamburger ul {
+  display: none;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,6 +376,7 @@ nav.hamburger ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-left: 50px;
 }
 nav.hamburger ul li {
   text-transform: uppercase;
@@ -401,7 +390,21 @@ nav.hamburger ul li a {
   font-size: 20px;
 }
 nav.hamburger ul li a:hover {
-  border-bottom: 3px solid #2c2c2c;
+  border-bottom: 3px solid #f6a823;
+}
+
+button.hamburger i {
+  position: absolute;
+  z-index: 999;
+  top: 15px;
+  left: 15px;
+  color: #2c2c2c;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+button.hamburger .fa-times {
+  display: none;
+  background-color: #f6a823;
 }
 
 nav.wrapper {
