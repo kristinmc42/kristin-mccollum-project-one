@@ -7,20 +7,13 @@
 .skipToContentLink:focus {
   transform: translateY(0%);
 }
-// hamburger menu
-// .hamburger.menu {
-//   opacity: 0;
-//   position: absolute;
-//   left: -100px;
-// }
 
 // hamburger nav
 nav.hamburger { 
+  position: absolute;
   display: none;
   background-color: $whiteShade;
-  position: absolute;
   ul{
-    display: none;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -39,6 +32,9 @@ nav.hamburger {
         border-bottom: 3px solid $orangeyYellow;
       }
     }
+  }
+  nav.hamburger.show {
+    display: block;
   }
 }
 

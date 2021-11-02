@@ -363,12 +363,11 @@ footer p {
 }
 
 nav.hamburger {
+  position: absolute;
   display: none;
   background-color: #f0efed;
-  position: absolute;
 }
 nav.hamburger ul {
-  display: none;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,6 +391,9 @@ nav.hamburger ul li a {
 }
 nav.hamburger ul li a:hover {
   border-bottom: 3px solid #f6a823;
+}
+nav.hamburger nav.hamburger.show {
+  display: block;
 }
 
 button.hamburger {
