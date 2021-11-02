@@ -25,6 +25,21 @@ buttonEl.addEventListener('click', function(event){
 })
   
 
+// FORM
+// when user submits form
+// separate event listeners for each form?
+// store, name, email address and comment in variables
+// get name and alert that message was recieved
+// make email address field required
 
+// get submit button for forms
+const formButtonEl = document.querySelector('form');
 
+console.log(formButtonEl)
 
+// event listener
+formButtonEl.addEventListener('submit', function(e){
+  e.preventDefault();
+  console.log(e);
+ 
+})
