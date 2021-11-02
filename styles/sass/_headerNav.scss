@@ -12,6 +12,7 @@
 nav.hamburger { 
   position: absolute;
   display: none;
+  z-index: 100;
   background-color: $whiteShade;
   ul{
     list-style: none;
@@ -33,9 +34,9 @@ nav.hamburger {
       }
     }
   }
-  nav.hamburger.show {
-    display: block;
-  }
+  // nav.hamburger.show {
+  //   display: block;
+  // }
 }
 
 // hamburger menu button
@@ -55,7 +56,10 @@ nav.hamburger {
       font-size: 2rem;
      
     }
-    .fa-times{
+    i.fa-bars:hover{
+      color: $whiteShade;
+    }
+    i.fa-times:hover{
       background-color: $orangeyYellow;
     }
   }

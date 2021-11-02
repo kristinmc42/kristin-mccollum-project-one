@@ -365,6 +365,7 @@ footer p {
 nav.hamburger {
   position: absolute;
   display: none;
+  z-index: 100;
   background-color: #f0efed;
 }
 nav.hamburger ul {
@@ -392,9 +393,6 @@ nav.hamburger ul li a {
 nav.hamburger ul li a:hover {
   border-bottom: 3px solid #f6a823;
 }
-nav.hamburger nav.hamburger.show {
-  display: block;
-}
 
 button.hamburger {
   opacity: 0;
@@ -412,7 +410,10 @@ button.hamburger i {
   color: #2c2c2c;
   font-size: 2rem;
 }
-button.hamburger .fa-times {
+button.hamburger i.fa-bars:hover {
+  color: #f0efed;
+}
+button.hamburger i.fa-times:hover {
   background-color: #f6a823;
 }
 

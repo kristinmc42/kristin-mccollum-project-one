@@ -6,33 +6,21 @@
 const buttonEl = document.querySelector('button.hamburger');
 
 //get hamburger nav
-const navEl = document.querySelector('nav.hamburger ul');
-console.log(navEl);
-
+const navEl = document.querySelector('nav.hamburger');
 
 //add event listener
 buttonEl.addEventListener('click', function(event){
-  console.log(event);
+ // check that the icon was clicked
   if (event.target.tagName === "I"){
-    // show hamburger menu and x icon, hide bars icon
+    // if the icon is the bars(hamburger), show the nav
+    // if the icon is the times, hide the nav
+    if (event.target.className === 'fas fa-bars'){
+      navEl.style.display = 'block';
+    }else {
+      navEl.style.display = 'none';
+    }
     event.target.classList.toggle('fa-bars');
     event.target.classList.toggle('fa-times');
-    console.log(event.target.className);
-
-
-    navEl
-    // event.target.parentElement.previousElementSibling.classList.toggle('hide');
-    // event.target.parentElement.previousElementSibling.classList.toggle('show');
-
-
-
-
-
-  //   if (event.target.className === 'fas fa-times')
-  //     // event.target.parentElement.previousElementSibling.style.display = "block";
-  //     navEl.style.display = 'block';
-  // } else if (event.target.className === 'fas fa-bars'){
-  //      navEl.style.display = 'none';
   }
 })
   
