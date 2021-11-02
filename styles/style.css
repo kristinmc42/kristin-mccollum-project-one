@@ -363,6 +363,7 @@ footer p {
 }
 
 nav.hamburger {
+  display: none;
   background-color: #f0efed;
   position: absolute;
 }
